@@ -1,0 +1,30 @@
+@use "@styles/_responsives" as responsives;
+
+.navBar {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: 0.14rem;
+  background: var(--gradient-beta);
+  padding: 1.125rem 2.5rem 0.9rem 2.5rem;
+
+  @include responsives.resolution__laptop__xs {
+    font-size: 0.875rem;
+  }
+
+  @include responsives.resolution__laptop__xxs {
+    font-size: 0.7rem;
+  }
+
+  @include responsives.resolution__mobile__l {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  > div {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

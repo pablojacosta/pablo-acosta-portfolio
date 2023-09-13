@@ -1,0 +1,56 @@
+@use "@styles/_responsives" as responsives;
+
+.projectDetails {
+  width: 47.25rem;
+  height: 33rem;
+  background: linear-gradient(
+    180deg,
+    #d9d9d9 0%,
+    rgba(217, 217, 217, 0) 100%,
+    0.10000000149011612
+  );
+  display: flex;
+  align-items: flex-end;
+
+  .text {
+    margin-bottom: 1.5rem;
+
+    .name {
+      font-family: var(--font-secondary);
+      font-size: 1.875rem;
+      line-height: 107%;
+      letter-spacing: 0.0375rem;
+      margin: 0 0 0.5rem 0;
+      color: var(--color-white);
+
+      @include responsives.resolution__laptop__m {
+        font-size: 1.75rem;
+        margin-bottom: 0.2rem;
+      }
+
+      @include responsives.resolution__mobile__m {
+        margin-top: -30vw;
+      }
+
+      @include responsives.resolution__mobile {
+        margin-top: -34vw;
+      }
+
+      @include responsives.resolution__mobile__s {
+        margin-top: -10.8rem;
+      }
+    }
+
+    .description {
+      font-size: 0.875rem;
+      line-height: 145%;
+      margin: 0;
+      width: 11.375rem;
+      color: var(--color-white);
+    }
+  }
+
+  .image {
+    margin-bottom: 8rem;
+  }
+}

@@ -1,0 +1,18 @@
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  // max-width: 75rem;
+  // width: 100%;
+  // margin: 0;
+
+  .githubIcon,
+  .linkedinIcon {
+    &:hover {
+      filter: drop-shadow(0 0 0.5rem var(--color-white));
+      transform: scale(1.1);
+      transform-origin: center;
+    }
+  }
+}

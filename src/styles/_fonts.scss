@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "futura";
+  src: url("./../assets/fonts/futura/Futura\ PT\ Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("./../assets/fonts/futura/Futura PT Heavy.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("./../assets/fonts/futura/Futura\ PT\ Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "dokyo";
+  src: url("./../assets/fonts/dokyo/dokyo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$fontPrimary: "Futura", sans-serif;
+$fontSecondary: "dokyo", "sans-serif";

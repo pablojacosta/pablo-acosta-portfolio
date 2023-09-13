@@ -1,0 +1,30 @@
+@use "@styles/_responsives" as responsives;
+
+.arrow {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #ffffff00;
+  height: 5.8rem;
+  width: 5.8rem;
+  top: 34%;
+  z-index: 1000;
+  left: 5%;
+  background-image: url("~@images/prev-arrow.svg");
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+
+  @include responsives.resolution__laptop__m {
+    height: 5.8rem;
+    width: 5.8rem;
+    background-size: contain;
+    top: 35%;
+    left: 1.5%;
+  }
+
+  @include responsives.resolution__mobile__m {
+    top: 80%;
+    left: 20%;
+  }
+}

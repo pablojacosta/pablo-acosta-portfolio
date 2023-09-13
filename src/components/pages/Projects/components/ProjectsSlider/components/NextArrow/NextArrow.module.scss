@@ -1,0 +1,22 @@
+@use "@styles/_responsives" as responsives;
+
+.arrow {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #ffffff00;
+  height: 5.8rem;
+  width: 5.8rem;
+  z-index: 1000;
+  background-image: url("~@images/next-arrow.svg");
+  border: none;
+  cursor: pointer;
+  background-size: contain;
+  top: 35%;
+  right: 5%;
+
+  @include responsives.resolution__mobile__m {
+    top: 80%;
+    right: 20%;
+  }
+}
