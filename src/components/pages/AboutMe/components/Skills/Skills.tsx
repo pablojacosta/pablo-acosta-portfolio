@@ -11,6 +11,9 @@ import IconNodejs from "@components/elements/Icons/NodeIcon/NodeIcon";
 import IconWeb3dotjs from "@components/elements/Icons/Web3Icon/Web3Icon";
 import styles from "./Skills.module.scss";
 import Icon488Git from "@components/elements/Icons/GitIcon/GitIcon";
+import IconJirasoftware from "@components/elements/Icons/JiraIcon/JiraIcon";
+import IconConfluence from "@components/elements/Icons/ConfluenceIcon/ConfluenceIcon";
+import IconPostman from "@components/elements/Icons/PostmanIcon/PostmanIcon";
 
 const Skills = () => {
   return (
@@ -58,12 +61,24 @@ const Skills = () => {
           MongoDb
         </li>
         <li>
+          <IconPostman />
+          Postman
+        </li>
+        <li>
           <IconDocker />
           Docker
         </li>
         <li>
           <IconStorybook />
           Storybook
+        </li>
+        <li>
+          <IconJirasoftware />
+          Jira
+        </li>
+        <li>
+          <IconConfluence />
+          Confluence
         </li>
       </ul>
     </div>
