@@ -5,12 +5,47 @@
   flex-direction: column;
   justify-content: space-between;
 
+  .top {
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      .square {
+        width: 23em;
+
+        p {
+          font-size: 1.25rem;
+          letter-spacing: 0.05rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
   .bottom {
     display: flex;
     justify-content: flex-end;
 
     p {
       font-style: italic;
+    }
+
+    .code {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      gap: 1rem;
+
+      p {
+        margin-bottom: 0.2rem;
+      }
+
+      a {
+        &:hover {
+          transform: scale(1.1);
+          transform-origin: center;
+        }
+      }
     }
   }
 }
