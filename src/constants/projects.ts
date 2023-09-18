@@ -29,7 +29,7 @@ export const projectThree = {
 };
 
 export const projectFour = {
-  name: "what-2-eat",
+  name: "lyrics & tabs finder",
   description: "PROJECT DESCRIPTION",
   image: mockedImage.src,
   link: BURN_ART,
@@ -37,7 +37,7 @@ export const projectFour = {
 };
 
 export const projectFive = {
-  name: "project five",
+  name: "what-2-eat",
   description: "PROJECT DESCRIPTION",
   image: mockedImage.src,
   link: BURN_ART,
@@ -48,6 +48,6 @@ export const projectsSlides = [
   { name: "octocorp", slide: 0 },
   { name: "burn.art", slide: 1 },
   { name: "whale", slide: 2 },
-  { name: "project four", slide: 3 },
-  { name: "project five", slide: 4 },
+  { name: "lyrics & tabs finder", slide: 3 },
+  { name: "what-2-eat", slide: 4 },
 ];

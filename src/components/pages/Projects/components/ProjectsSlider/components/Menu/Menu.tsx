@@ -17,7 +17,8 @@ const Menu = ({ selected, handleSelect, nav, handleSetNav }: IMenu) => {
     return selected === name ? styles.active : "";
   };
 
-  const isMobileBreakpoint = useMediaQuery(480);
+  const isTabletBreakpoint = useMediaQuery(768);
+  const isMobileBreakpoint = useMediaQuery(470);
 
   const settings = {
     infinite: true,
@@ -31,7 +32,7 @@ const Menu = ({ selected, handleSelect, nav, handleSetNav }: IMenu) => {
 
   return (
     <div className={styles.menu}>
-      {!isMobileBreakpoint ? (
+      {!isTabletBreakpoint ? (
         <ul>
           <MenuItem
             name={EProjects.PROJECT_ONE}
@@ -70,35 +71,35 @@ const Menu = ({ selected, handleSelect, nav, handleSetNav }: IMenu) => {
               EProjects.PROJECT_ONE
             )}`}
           >
-            OctoCorp
+            {EProjects.PROJECT_ONE}
           </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_TWO
             )}`}
           >
-            Burn.Art
+            {EProjects.PROJECT_TWO}
           </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_THREE
             )}`}
           >
-            Whale
+            {EProjects.PROJECT_THREE}
           </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_FOUR
             )}`}
           >
-            Project Four
+            {EProjects.PROJECT_FOUR}
           </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_FIVE
             )}`}
           >
-            Project Five
+            {EProjects.PROJECT_FIVE}
           </div>
         </Slider>
       )}
