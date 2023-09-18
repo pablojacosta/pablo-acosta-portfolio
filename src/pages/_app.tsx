@@ -29,13 +29,11 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <title>Pablo Acosta - Portfolio</title>
       </Head>
-      {!isHome && (
-        <header>
-          <NavBar />
-        </header>
-      )}
+      <header>
+        <NavBar />
+      </header>
       <Component {...pageProps} />
-      {!isHome && <Footer />}
+      <Footer />
     </div>
   );
 }

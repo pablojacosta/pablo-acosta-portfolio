@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { ABOUT_ME, HOME, PROJECTS } from "constants/routes";
+import { ABOUT_ME, CONTACT, HOME, PROJECTS } from "constants/routes";
 import styles from "./NavList.module.scss";
 
 const NavList = () => {
@@ -25,6 +25,11 @@ const NavList = () => {
         <li>
           <Link href={ABOUT_ME} className={addActiveClass(ABOUT_ME)}>
             About me
+          </Link>
+        </li>
+        <li>
+          <Link href={CONTACT} className={addActiveClass(CONTACT)}>
+            Contact
           </Link>
         </li>
       </ul>

@@ -8,9 +8,13 @@ import styles from "./SocialIcons.module.scss";
 const LINKEDIN_ICON_SIZE = "50";
 const GITHUB_ICON_SIZE = "42";
 
-const SocialIcons = () => {
+interface ISocialIcons {
+  className?: string;
+}
+
+const SocialIcons = ({ className }: ISocialIcons) => {
   return (
-    <div className={styles.socialIcons}>
+    <div className={`${styles.socialIcons} ${className}`}>
       <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
         <Image
           src={githubIcon.src}

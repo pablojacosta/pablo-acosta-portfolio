@@ -1,0 +1,16 @@
+.home {
+  padding-top: 2rem;
+  height: 76.7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .bottom {
+    display: flex;
+    justify-content: flex-end;
+
+    p {
+      font-style: italic;
+    }
+  }
+}
