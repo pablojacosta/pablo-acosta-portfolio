@@ -8,38 +8,51 @@
   .top {
     .content {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
 
-      .square {
-        width: 23em;
+      .leftSection {
+        .text {
+          display: flex;
+          flex-direction: column;
 
-        &.border {
-          border-bottom: 0.25rem solid var(--color-beta);
-        }
+          .square {
+            width: 23em;
 
-        p {
-          font-size: 1.25rem;
-          letter-spacing: 0.05rem;
-          line-height: 1.5rem;
-        }
+            &.border {
+              border-bottom: 0.25rem solid var(--color-beta);
+            }
 
-        &.left,
-        &.right {
-          &:hover {
-            transform: scale(1.1);
+            p {
+              font-size: 1.25rem;
+              letter-spacing: 0.05rem;
+              line-height: 1.5rem;
+            }
+
+            &.left,
+            &.right {
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+
+            &.left {
+              &:hover {
+                transform: translateX(1rem) rotate(-5deg);
+              }
+            }
+
+            &.right {
+              &:hover {
+                transform: translateX(-1rem) rotate(5deg);
+              }
+            }
           }
         }
+      }
 
-        &.left {
-          &:hover {
-            transform: translateX(1rem) rotate(-5deg);
-          }
-        }
-
-        &.right {
-          &:hover {
-            transform: translateX(-1rem) rotate(5deg);
-          }
+      .rightSection {
+        img {
+          //   border-radius: 50%;
         }
       }
     }
