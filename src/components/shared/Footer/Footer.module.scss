@@ -8,6 +8,10 @@
   background: var(--gradient-beta);
   width: 100%;
 
+  &.removeBg {
+    background: none;
+  }
+
   @include responsives.resolution__mobile__m {
     flex-direction: column;
   }

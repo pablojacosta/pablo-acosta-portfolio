@@ -6,8 +6,12 @@ import Link from "next/link";
 import { PORTFOLIO_URL } from "constants/externalLinks";
 import Image from "next/image";
 import photo from "@images/profile-photo-round-no-bg.png";
+import useMediaQuery from "@hooks/useMediaQuery";
 
 const Home = () => {
+  const isMobileBreakpoint = useMediaQuery(563);
+  const imageSize = !isMobileBreakpoint ? 400 : 150;
+
   return (
     <Container>
       <div className={styles.home}>
@@ -36,8 +40,9 @@ const Home = () => {
                   className={`${styles.square} ${styles.border} ${styles.middleParagraphs}`}
                 >
                   <p>
-                    Making, recording & mixing music is my hobby and development
-                    my career.
+                    The technologies that I use are Typescript/Javascript,
+                    React, Next, Node, SASS/CSS3, HTML5, MongoDb, Docker, Figma
+                    and Web3.
                   </p>
                 </div>
                 <div
@@ -47,8 +52,8 @@ const Home = () => {
                 </div>
                 <div className={`${styles.square} ${styles.lastParagraph}`}>
                   <p>
-                    The technologies that I use are Typescript/Javascript,
-                    React, Next, Node, SASS/CSS, HTML, MongoDb, Docker and Web3.
+                    Making, recording & mixing music is my hobby and development
+                    my career.
                   </p>
                 </div>
               </div>
@@ -57,8 +62,8 @@ const Home = () => {
               <Image
                 src={photo.src}
                 alt="Portfolio Photo"
-                width={400}
-                height={400}
+                width={imageSize}
+                height={imageSize}
                 className={styles.photo}
               />
               <div className={styles.orangeRectangle} />

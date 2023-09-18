@@ -1,0 +1,50 @@
+@use "@styles/_responsives" as responsives;
+
+.navModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 73.4375rem;
+  background-color: rgba(19, 19, 22, 0.8);
+  backdrop-filter: blur(2.938rem);
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.14375rem;
+    margin-top: 12.94rem;
+    gap: 3.12rem;
+
+    @include responsives.resolution__mobile__l {
+      font-size: 1.25rem;
+      line-height: 1.01469rem;
+      letter-spacing: 0.115rem;
+    }
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 2.5rem;
+
+    @include responsives.resolution__mobile__l {
+      padding: 1.1rem 1.5rem;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      margin-bottom: 5rem;
+    }
+  }
+}

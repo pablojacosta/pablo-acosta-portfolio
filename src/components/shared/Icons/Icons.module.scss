@@ -1,4 +1,16 @@
+@use "@styles/_responsives" as responsives;
+
 .icons {
   display: flex;
   gap: 2rem;
+
+  svg {
+    height: 2.5rem;
+    width: 2.5rem;
+
+    @include responsives.resolution__mobile__s {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
 }

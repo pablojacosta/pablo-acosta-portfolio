@@ -29,11 +29,11 @@ export const projectThree = {
 };
 
 export const projectFour = {
-  name: "project four",
+  name: "what-2-eat",
   description: "PROJECT DESCRIPTION",
   image: mockedImage.src,
   link: BURN_ART,
-  role: "Full Stack Dev. Web3.",
+  role: "Full Stack Dev.",
 };
 
 export const projectFive = {

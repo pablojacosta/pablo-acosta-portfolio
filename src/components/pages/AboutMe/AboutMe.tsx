@@ -22,7 +22,7 @@ const AboutMe = () => {
           </p>
           <p>
             I&apos;m a self-taught • curious • dinamic • fast-learning Full
-            Stack Developer / Recording Engineer / Tech-Enthusiast.
+            Stack Developer / Recording Engineer / Musician / Tech-Enthusiast.
           </p>
           <p>These are some of my skills:</p>
           <Skills />

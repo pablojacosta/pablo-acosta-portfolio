@@ -14,6 +14,7 @@ import Icon488Git from "@components/elements/Icons/GitIcon/GitIcon";
 import IconJirasoftware from "@components/elements/Icons/JiraIcon/JiraIcon";
 import IconConfluence from "@components/elements/Icons/ConfluenceIcon/ConfluenceIcon";
 import IconPostman from "@components/elements/Icons/PostmanIcon/PostmanIcon";
+import IconFigma from "@components/elements/Icons/FigmaIcon/FigmIcon";
 
 const Skills = () => {
   return (
@@ -69,16 +70,16 @@ const Skills = () => {
           Docker
         </li>
         <li>
+          <IconFigma />
+          Figma
+        </li>
+        <li>
           <IconStorybook />
           Storybook
         </li>
         <li>
           <IconJirasoftware />
           Jira
-        </li>
-        <li>
-          <IconConfluence />
-          Confluence
         </li>
       </ul>
     </div>
