@@ -70,35 +70,35 @@ const Menu = ({ selected, handleSelect, nav, handleSetNav }: IMenu) => {
               EProjects.PROJECT_ONE
             )}`}
           >
-            classique
+            OctoCorp
           </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_TWO
             )}`}
           >
-            derelicte
+            Burn.Art
           </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_THREE
             )}`}
           >
-            modus
+            Whale
           </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_FOUR
             )}`}
           >
-            lux
+            Project Four
           </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_FIVE
             )}`}
           >
-            astral
+            Project Five
           </div>
         </Slider>
       )}

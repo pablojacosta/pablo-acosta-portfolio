@@ -26,12 +26,12 @@ body {
   padding: 0;
   background-color: #000000;
   color: #ffffff;
-  font-family: "futura", sans-serif;
+  font-family: var(--font-primary);
 }
 
 button {
   color: #ffffff;
-  font-family: "futura", sans-serif;
+  font-family: var(--font-primary);
 }
 
 h1,
@@ -74,6 +74,10 @@ h6 {
 p {
   color: #cdcdcd;
   line-height: 1.4375rem;
+}
+
+ul {
+  font-family: var(--font-secondary);
 }
 
 * {

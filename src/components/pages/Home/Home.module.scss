@@ -26,24 +26,31 @@
               font-size: 1.25rem;
               letter-spacing: 0.05rem;
               line-height: 1.5rem;
+              margin: 0.875rem 0;
             }
 
-            &.left,
-            &.right {
+            &.firstParagraph,
+            &.lastParagraph {
               &:hover {
                 transform: scale(1.1);
               }
             }
 
-            &.left {
-              &:hover {
-                transform: translateX(1rem) rotate(-5deg);
+            &.firstParagraph {
+              p {
+                margin-top: 0;
               }
             }
 
-            &.right {
+            &.middleParagraphs {
               &:hover {
-                transform: translateX(-1rem) rotate(5deg);
+                transform: translateX(1rem);
+              }
+            }
+
+            &.lastParagraph {
+              p {
+                margin-bottom: 0;
               }
             }
           }
@@ -51,8 +58,36 @@
       }
 
       .rightSection {
-        img {
-          //   border-radius: 50%;
+        position: relative;
+
+        .photo {
+          position: relative;
+          z-index: 10;
+          padding-right: 5rem;
+        }
+
+        .orangeRectangle {
+          background-color: var(--color-beta);
+          width: 25rem;
+          height: 15rem;
+          position: absolute;
+          top: 0;
+          left: 12%;
+          z-index: 1;
+          border-radius: 15%;
+          transform: rotate(10deg);
+        }
+
+        .whiteRectangle {
+          background-color: var(--color-white);
+          width: 25rem;
+          height: 15rem;
+          position: absolute;
+          top: 44%;
+          left: -5%;
+          z-index: 0;
+          border-radius: 10%;
+          transform: rotate(-5deg);
         }
       }
     }
@@ -64,6 +99,7 @@
 
     p {
       font-style: italic;
+      margin-top: 0;
     }
 
     .code {

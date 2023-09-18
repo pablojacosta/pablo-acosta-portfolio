@@ -19,7 +19,7 @@ const NavList = () => {
         </li>
         <li>
           <Link href={PROJECTS} className={addActiveClass(PROJECTS)}>
-            Projects
+            Works
           </Link>
         </li>
         <li>

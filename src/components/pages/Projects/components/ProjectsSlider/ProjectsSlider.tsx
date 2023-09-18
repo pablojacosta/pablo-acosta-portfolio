@@ -18,7 +18,7 @@ import {
 } from "constants/projects";
 
 const ProjectsSlider = () => {
-  const [selected, setSelected] = useState("project one");
+  const [selected, setSelected] = useState("octocorp");
   const isMobileBreakpoint = useMediaQuery(563);
   const [slideToShow, setSlideToShow] = useState(0);
   const [nav1, setNav1] = useState<any>();
@@ -55,7 +55,6 @@ const ProjectsSlider = () => {
 
   return (
     <div className={styles.projectsSlider}>
-      <h3>Project Slider</h3>
       <Menu
         selected={selected}
         handleSelect={handleSelect}
@@ -76,26 +75,36 @@ const ProjectsSlider = () => {
             image={projectOne.image}
             name={projectOne.name}
             description={projectOne.description}
+            link={projectOne.link}
+            role={projectOne.role}
           />
           <ProjectDetails
             image={projectTwo.image}
             name={projectTwo.name}
             description={projectTwo.description}
+            link={projectTwo.link}
+            role={projectTwo.role}
           />
           <ProjectDetails
             image={projectThree.image}
             name={projectThree.name}
             description={projectThree.description}
+            link={projectThree.link}
+            role={projectThree.role}
           />
           <ProjectDetails
             image={projectFour.image}
             name={projectFour.name}
             description={projectFour.description}
+            link={projectFour.link}
+            role={projectFour.role}
           />
           <ProjectDetails
             image={projectFive.image}
             name={projectFive.name}
             description={projectFive.description}
+            link={projectFive.link}
+            role={projectFive.role}
           />
         </Slider>
       </div>

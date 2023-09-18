@@ -11,13 +11,16 @@
   );
   display: flex;
   align-items: flex-end;
+  padding-top: 2rem;
 
   .text {
     margin-bottom: 1.5rem;
+    width: 11.375rem;
 
     .name {
       font-family: var(--font-secondary);
-      font-size: 1.875rem;
+      font-size: 1.5rem;
+      text-transform: capitalize;
       line-height: 107%;
       letter-spacing: 0.0375rem;
       margin: 0 0 0.5rem 0;
@@ -42,15 +45,34 @@
     }
 
     .description {
-      font-size: 0.875rem;
+      font-size: 0.8rem;
       line-height: 145%;
       margin: 0;
-      width: 11.375rem;
+
       color: var(--color-white);
+    }
+
+    .role {
+      margin: 0.3rem 0 0 0;
+      color: var(--color-white);
+      font-size: 0.8rem;
     }
   }
 
   .image {
     margin-bottom: 8rem;
+    object-fit: cover;
+    width: 23.75rem;
+    height: 23.75rem;
+    border-radius: 5%;
+
+    &.secondClass {
+      object-fit: contain;
+      background-color: var(--color-white);
+    }
+
+    &:hover {
+      transform: scale(1.01);
+    }
   }
 }

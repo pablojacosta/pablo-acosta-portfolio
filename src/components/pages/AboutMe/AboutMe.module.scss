@@ -1,4 +1,16 @@
 .aboutMe {
   padding-top: 2rem;
   height: 76.7vh;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+      span {
+        padding: 0.5rem;
+      }
+    }
+  }
 }

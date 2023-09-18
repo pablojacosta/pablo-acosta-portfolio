@@ -5,19 +5,19 @@ import IconCode from "@components/elements/Icons/CodeIcon/CodeIcon";
 import Link from "next/link";
 import { PORTFOLIO_URL } from "constants/externalLinks";
 import Image from "next/image";
-import photo from "@images/profile-photo-no-bg.png";
+import photo from "@images/profile-photo-round-no-bg.png";
 
 const Home = () => {
   return (
     <Container>
       <div className={styles.home}>
         <div className={styles.top}>
-          <h1>My Portfolio</h1>
+          <h1>Pablo Acosta&apos;s Portfolio</h1>
           <div className={styles.content}>
             <div className={styles.leftSection}>
               <div className={styles.text}>
                 <div
-                  className={`${styles.square} ${styles.border} ${styles.left}`}
+                  className={`${styles.square} ${styles.border} ${styles.firstParagraph}`}
                 >
                   <p>
                     Hi! My name is Pablo and I&apos;m a Full Stack Developer
@@ -25,26 +25,30 @@ const Home = () => {
                   </p>
                 </div>
                 <div
-                  className={`${styles.square} ${styles.border} ${styles.right}`}
+                  className={`${styles.square} ${styles.border} ${styles.middleParagraphs}`}
                 >
                   <p>
-                    I discovered my passion for development after several years
-                    of playing, recording & mixing music. Now, music is my hobby
-                    and development my career.
+                    I&apos;m curious and dinamic by nature and passionate about
+                    building web solutions and experiences.
                   </p>
                 </div>
                 <div
-                  className={`${styles.square} ${styles.border} ${styles.left}`}
+                  className={`${styles.square} ${styles.border} ${styles.middleParagraphs}`}
                 >
                   <p>
-                    One day, I decided to escape from Buenos Aires city, so now
-                    I work remotely surrounded by beautiful mountains.
+                    Making, recording & mixing music is my hobby and development
+                    my career.
                   </p>
                 </div>
-                <div className={`${styles.square} ${styles.right}`}>
+                <div
+                  className={`${styles.square} ${styles.border} ${styles.middleParagraphs}`}
+                >
+                  <p>I work remotely surrounded by beautiful mountains.</p>
+                </div>
+                <div className={`${styles.square} ${styles.lastParagraph}`}>
                   <p>
                     The technologies that I use are Typescript/Javascript,
-                    React.js, Next.js, Node.js, SASS/CSS & HTML.
+                    React, Next, Node, SASS/CSS, HTML, MongoDb, Docker and Web3.
                   </p>
                 </div>
               </div>
@@ -53,9 +57,12 @@ const Home = () => {
               <Image
                 src={photo.src}
                 alt="Portfolio Photo"
-                width={250}
-                height={250}
+                width={400}
+                height={400}
+                className={styles.photo}
               />
+              <div className={styles.orangeRectangle} />
+              <div className={styles.whiteRectangle} />
             </div>
           </div>
         </div>

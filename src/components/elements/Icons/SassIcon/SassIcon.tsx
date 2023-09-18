@@ -6,8 +6,8 @@ function IconSass(props: any) {
     <svg
       viewBox="0 0 32 32"
       fill="currentColor"
-      height="4rem"
-      width="4rem"
+      height="3.5rem"
+      width="3.5rem"
       {...props}
     >
       <path

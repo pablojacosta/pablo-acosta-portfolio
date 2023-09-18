@@ -1,4 +1,10 @@
 .projects {
   padding-top: 2rem;
   height: 76.7vh;
+
+  h1 {
+    span {
+      color: var(--color-beta);
+    }
+  }
 }

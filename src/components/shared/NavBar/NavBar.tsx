@@ -20,18 +20,11 @@ const NavBar = () => {
 
   return (
     <>
-      {/* {showModal && isTabletBreakpoint && (
-        <Modal handleSetCloseModal={handleSetCloseModal} />
-      )} */}
       <nav className={styles.navBar}>
         <div>
-          {/* {isTabletBreakpoint ? (
-            <NavIcon handleSetShowModal={handleSetShowModal} />
-          ) : (
-            <NavList />
-          )} */}
           <Logo />
           <NavList />
+          <Logo />
         </div>
       </nav>
     </>

@@ -6,21 +6,6 @@
   width: 100%;
   margin-bottom: 3.12rem;
 
-  h3 {
-    font-size: 1.5rem;
-    line-height: 2.8125rem;
-    margin-bottom: 1rem;
-
-    @include responsives.resolution__tablet {
-      font-size: 2.1875rem;
-      margin-bottom: 1.5rem;
-    }
-
-    @include responsives.resolution__mobile__s {
-      font-size: 1.75rem;
-    }
-  }
-
   .slider {
     &::before {
       z-index: -1;

@@ -1,39 +1,53 @@
 import mockedImage from "@images/beard-hat-icon.jpg";
+import projectOneImage from "@images/project-one.png";
+import projectTwoImage from "@images/project-two.jpg";
+import projectThreeImage from "@images/project-three.jpg";
+import { BURN_ART, OCTOCORP, WHALE } from "./externalLinks";
 
 export const projectOne = {
-  name: "project one",
-  description: "PROJECT DESCRIPTION",
-  image: mockedImage.src,
+  name: "octoCorp",
+  description: "NFT LANDING AND MINTING PAGE.",
+  image: projectOneImage.src,
+  link: OCTOCORP,
+  role: "Full Stack Dev. Web3.",
 };
 
 export const projectTwo = {
-  name: "project two",
-  description: "PROJECT DESCRIPTION",
-  image: mockedImage.src,
+  name: "burn.art",
+  description: "NFT BURNING AND CURRENCY MINTING PAGE.",
+  image: projectTwoImage.src,
+  link: BURN_ART,
+  role: "Front End Dev. Web3.",
 };
 
 export const projectThree = {
-  name: "project three",
-  description: "PROJECT DESCRIPTION",
-  image: mockedImage.src,
+  name: "whale",
+  description: "CURRENCY WEB.",
+  image: projectThreeImage.src,
+  link: WHALE,
+  role: "Full Stack Dev (WEB & CMS).",
 };
 
 export const projectFour = {
   name: "project four",
   description: "PROJECT DESCRIPTION",
   image: mockedImage.src,
+  link: BURN_ART,
+  role: "Full Stack Dev. Web3.",
 };
 
 export const projectFive = {
   name: "project five",
   description: "PROJECT DESCRIPTION",
   image: mockedImage.src,
+  link: BURN_ART,
+  role: "Full Stack Dev. Web3.",
 };
 
 export const projectsSlides = [
-  { name: "project one", slide: 0 },
-  { name: "project two", slide: 1 },
-  { name: "project three", slide: 2 },
+  { name: "octocorp", slide: 0 },
+  { name: "burn.art", slide: 1 },
+  { name: "whale", slide: 2 },
   { name: "project four", slide: 3 },
   { name: "project five", slide: 4 },
 ];

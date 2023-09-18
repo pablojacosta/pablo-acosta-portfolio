@@ -1,7 +1,7 @@
 export const enum EProjects {
-  PROJECT_ONE = "project one",
-  PROJECT_TWO = "project two",
-  PROJECT_THREE = "project three",
+  PROJECT_ONE = "octocorp",
+  PROJECT_TWO = "burn.art",
+  PROJECT_THREE = "whale",
   PROJECT_FOUR = "project four",
   PROJECT_FIVE = "project five",
 }
