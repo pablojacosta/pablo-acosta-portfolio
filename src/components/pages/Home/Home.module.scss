@@ -22,6 +22,25 @@
           letter-spacing: 0.05rem;
           line-height: 1.5rem;
         }
+
+        &.left,
+        &.right {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        &.left {
+          &:hover {
+            transform: translateX(1rem) rotate(-5deg);
+          }
+        }
+
+        &.right {
+          &:hover {
+            transform: translateX(-1rem) rotate(5deg);
+          }
+        }
       }
     }
   }
