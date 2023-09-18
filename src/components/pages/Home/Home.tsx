@@ -12,26 +12,26 @@ const Home = () => {
         <div className={styles.top}>
           <h1>My Portfolio</h1>
           <div className={styles.content}>
-            <div className={`${styles.square} `}>
+            <div className={`${styles.square} ${styles.border}`}>
               <p>
-                Hi! My name is Pablo and I&apos;m a Full Stack developer from
+                Hi! My name is Pablo and I&apos;m a Full Stack Developer from
                 Argentina.
               </p>
             </div>
-            <div className={`${styles.square} ${styles.right}`}>
+            <div className={`${styles.square} ${styles.border}`}>
               <p>
                 I discovered my passion for development after several years of
                 playing, recording & mixing music. Now, music is my hobby and
                 development my career.
               </p>
             </div>
-            <div className={`${styles.square} ${styles.left}`}>
+            <div className={`${styles.square} ${styles.border}`}>
               <p>
                 One day, I decided to escape from Buenos Aires city, so now I
                 work remotely surrounded by beautiful mountains.
               </p>
             </div>
-            <div className={`${styles.square} ${styles.right}`}>
+            <div className={styles.square}>
               <p>
                 The technologies that I use are Typescript/Javascript, React.js,
                 Next.js, Node.js, SASS/CSS & HTML.

@@ -15,7 +15,7 @@
 
     &:hover,
     &.active {
-      color: #ef1145;
+      color: var(--color-beta);
     }
 
     &.disabled {
