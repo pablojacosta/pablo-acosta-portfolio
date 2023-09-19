@@ -2,6 +2,7 @@ import styles from "./ProjectDetails.module.scss";
 import DetailsText from "./components/DetailsText";
 import DetailsImage from "./components/DetailsImage";
 import DetailsButton from "./components/DetailsButton";
+import useMediaQuery from "@hooks/useMediaQuery";
 
 interface IProjectDetails {
   image: string;
@@ -18,11 +19,25 @@ const ProjectDetails = ({
   link,
   role,
 }: IProjectDetails) => {
+  const isTabletBreakpoint = useMediaQuery(890);
+
   return (
     <div className={styles.projectDetails}>
-      <DetailsText name={name} description={description} role={role} />
-      <DetailsImage image={image} link={link} />
-      <DetailsButton link={link} />
+      {!isTabletBreakpoint ? (
+        <>
+          <DetailsText name={name} description={description} role={role} />
+          <DetailsImage image={image} link={link} />
+          <DetailsButton link={link} />
+        </>
+      ) : (
+        <>
+          <DetailsImage image={image} link={link} />
+          <div className={styles.bottom}>
+            <DetailsText name={name} description={description} role={role} />
+            <DetailsButton link={link} />
+          </div>
+        </>
+      )}
     </div>
   );
 };

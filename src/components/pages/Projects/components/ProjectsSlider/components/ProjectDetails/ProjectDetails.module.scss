@@ -13,7 +13,19 @@
   align-items: flex-end;
   padding-top: 2rem;
 
-  @include responsives.resolution__mobile {
-    align-items: flex-start;
+  @include responsives.resolution__laptop__xxs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    @include responsives.resolution__mobile__s {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

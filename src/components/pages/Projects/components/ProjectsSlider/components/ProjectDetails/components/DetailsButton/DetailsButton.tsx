@@ -8,7 +8,12 @@ interface IDetailsButton {
 
 const DetailsButton = ({ link }: IDetailsButton) => {
   return (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
+    <Link
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.detailsButton}
+    >
       <Button>Go To Website</Button>
     </Link>
   );

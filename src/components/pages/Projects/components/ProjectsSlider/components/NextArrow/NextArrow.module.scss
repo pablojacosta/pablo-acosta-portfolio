@@ -16,17 +16,23 @@
   right: 5%;
 
   @include responsives.resolution__tablet {
-    top: 82%;
+    top: 85%;
     right: 33%;
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
   }
 
   @include responsives.resolution__mobile {
-    top: 84%;
     right: 30%;
     height: 3rem;
     width: 3rem;
+  }
+
+  @include responsives.resolution__mobile__s {
+    right: 30%;
+    top: 88%;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   @include responsives.resolution__mobile__xxs {

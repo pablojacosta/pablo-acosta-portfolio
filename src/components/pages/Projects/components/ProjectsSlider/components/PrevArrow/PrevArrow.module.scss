@@ -16,17 +16,23 @@
   cursor: pointer;
 
   @include responsives.resolution__tablet {
-    top: 82%;
+    top: 85%;
     left: 30%;
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
   }
 
   @include responsives.resolution__mobile {
-    top: 84%;
     left: 28%;
     height: 3rem;
     width: 3rem;
+  }
+
+  @include responsives.resolution__mobile__s {
+    left: 30%;
+    top: 88%;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 
   @include responsives.resolution__mobile__xxs {

@@ -1,0 +1,9 @@
+@use "@styles/_responsives" as responsives;
+
+.detailsButton {
+  button {
+    @include responsives.resolution__mobile__s {
+      margin: 0;
+    }
+  }
+}
