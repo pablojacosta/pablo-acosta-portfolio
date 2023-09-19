@@ -1,15 +1,28 @@
+@use "@styles/_responsives" as responsives;
+
 .aboutMe {
   padding-top: 2rem;
   height: 76.7vh;
+
+  @include responsives.resolution__mobile {
+    height: 80vh;
+  }
 
   .content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     p {
+      text-align: center;
+
       span {
         padding: 0.5rem;
+      }
+
+      @include responsives.resolution__mobile {
+        font-size: 0.875rem;
       }
     }
   }
