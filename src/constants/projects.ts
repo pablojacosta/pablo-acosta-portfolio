@@ -30,7 +30,7 @@ export const projectThree = {
 
 export const projectFour = {
   name: "lyrics & tabs finder",
-  description: "PROJECT DESCRIPTION",
+  description: "SPA SEARCH ENGINE.",
   image: mockedImage.src,
   link: BURN_ART,
   role: "Full Stack Dev.",
@@ -38,10 +38,10 @@ export const projectFour = {
 
 export const projectFive = {
   name: "what-2-eat",
-  description: "PROJECT DESCRIPTION",
+  description: "SPA SEARCH ENGINE.",
   image: mockedImage.src,
   link: BURN_ART,
-  role: "Full Stack Dev. Web3.",
+  role: "Full Stack Dev.",
 };
 
 export const projectsSlides = [

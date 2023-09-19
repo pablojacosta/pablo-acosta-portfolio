@@ -15,6 +15,9 @@ import IconJirasoftware from "@components/elements/Icons/JiraIcon/JiraIcon";
 import IconConfluence from "@components/elements/Icons/ConfluenceIcon/ConfluenceIcon";
 import IconPostman from "@components/elements/Icons/PostmanIcon/PostmanIcon";
 import IconFigma from "@components/elements/Icons/FigmaIcon/FigmIcon";
+import IconVite from "@components/elements/Icons/ViteIcon/ViteIcon";
+import zustand from "@images/zustand.png";
+import Image from "next/image";
 
 const Skills = () => {
   return (
@@ -44,6 +47,10 @@ const Skills = () => {
         <li>
           <IconWeb3dotjs />
           Web3.js
+        </li>
+        <li>
+          <IconVite />
+          Vite
         </li>
         <li>
           <IconLogoJavascript />
@@ -80,6 +87,21 @@ const Skills = () => {
         <li>
           <IconJirasoftware />
           Jira
+        </li>
+        <li>
+          <IconConfluence />
+          Confluence
+        </li>
+        <li>
+          <div className={styles.zustand}>
+            <Image
+              src={zustand.src}
+              alt="Zustand Icon"
+              width={75}
+              height={40}
+            />
+          </div>
+          Zustand
         </li>
       </ul>
     </div>
