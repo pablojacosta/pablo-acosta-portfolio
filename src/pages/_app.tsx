@@ -4,11 +4,11 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import NavBar from "@components/shared/NavBar/NavBar";
 import Footer from "@components/shared/Footer/Footer";
-import { HOME } from "constants/routes";
+import { CONTACT } from "constants/routes";
 
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
-  const isHome = pathname === HOME;
+  const isContact = pathname === CONTACT;
 
   return (
     <div id="app">
@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <NavBar />
       </header>
       <Component {...pageProps} />
-      <Footer />
+      {!isContact && <Footer />}
     </div>
   );
 }

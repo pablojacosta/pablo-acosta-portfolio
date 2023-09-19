@@ -1,3 +1,5 @@
+@use "@styles/_responsives" as responsives;
+
 .contact {
   padding-top: 2rem;
   height: 76.7vh;
@@ -9,8 +11,20 @@
     align-items: center;
     text-align: center;
 
+    @include responsives.resolution__mobile {
+      svg {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+
     p {
       font-size: 2rem;
+
+      @include responsives.resolution__mobile__m {
+        font-size: 1.5rem;
+        line-height: 3rem;
+      }
     }
 
     .mailIcon {
@@ -24,9 +38,21 @@
     .icons {
       gap: 6rem;
 
+      @include responsives.resolution__mobile {
+        gap: 4rem;
+      }
+
+      @include responsives.resolution__mobile__xxs {
+        gap: 2rem;
+      }
+
       img {
         height: 10rem;
         width: auto;
+
+        @include responsives.resolution__mobile {
+          height: 6rem;
+        }
       }
     }
   }
