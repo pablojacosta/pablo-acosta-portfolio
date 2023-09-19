@@ -15,16 +15,21 @@
   border: none;
   cursor: pointer;
 
-  @include responsives.resolution__laptop__m {
-    height: 5.8rem;
-    width: 5.8rem;
-    background-size: contain;
-    top: 35%;
-    left: 1.5%;
+  @include responsives.resolution__tablet {
+    top: 82%;
+    left: 30%;
+    height: 4rem;
+    width: 4rem;
   }
 
-  @include responsives.resolution__mobile__m {
-    top: 80%;
-    left: 20%;
+  @include responsives.resolution__mobile {
+    top: 84%;
+    left: 28%;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  @include responsives.resolution__mobile__xxs {
+    left: 26%;
   }
 }

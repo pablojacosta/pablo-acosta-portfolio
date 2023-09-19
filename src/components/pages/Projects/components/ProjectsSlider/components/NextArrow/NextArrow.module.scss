@@ -15,8 +15,21 @@
   top: 35%;
   right: 5%;
 
-  @include responsives.resolution__mobile__m {
-    top: 80%;
-    right: 20%;
+  @include responsives.resolution__tablet {
+    top: 82%;
+    right: 33%;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  @include responsives.resolution__mobile {
+    top: 84%;
+    right: 30%;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  @include responsives.resolution__mobile__xxs {
+    right: 25%;
   }
 }

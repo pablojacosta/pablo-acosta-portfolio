@@ -1,0 +1,23 @@
+@use "@styles/_responsives" as responsives;
+
+.detailsImage {
+  margin-bottom: 8rem;
+  object-fit: cover;
+  width: 23.75rem;
+  height: 23.75rem;
+  border-radius: 5%;
+
+  @include responsives.resolution__mobile {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  &.secondClass {
+    object-fit: contain;
+    background-color: var(--color-white);
+  }
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}

@@ -1,0 +1,47 @@
+@use "@styles/_responsives" as responsives;
+
+.detailsText {
+  margin-bottom: 1.5rem;
+  width: 11.375rem;
+
+  .name {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    line-height: 107%;
+    letter-spacing: 0.0375rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-white);
+
+    @include responsives.resolution__laptop__m {
+      font-size: 1.75rem;
+      margin-bottom: 0.2rem;
+    }
+
+    @include responsives.resolution__mobile__m {
+      margin-top: -30vw;
+    }
+
+    @include responsives.resolution__mobile {
+      margin-top: -34vw;
+    }
+
+    @include responsives.resolution__mobile__s {
+      margin-top: -10.8rem;
+    }
+  }
+
+  .description {
+    font-size: 0.8rem;
+    line-height: 145%;
+    margin: 0;
+
+    color: var(--color-white);
+  }
+
+  .role {
+    margin: 0.3rem 0 0 0;
+    color: var(--color-white);
+    font-size: 0.8rem;
+  }
+}
