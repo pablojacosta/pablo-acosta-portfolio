@@ -2,6 +2,7 @@ import mockedImage from "@images/beard-hat-icon.jpg";
 import projectOneImage from "@images/project-one.png";
 import projectTwoImage from "@images/project-two.jpg";
 import projectThreeImage from "@images/project-three.jpg";
+import projectFourImage from "@images/what-2-eat.png";
 import { BURN_ART, OCTOCORP, WHALE } from "./externalLinks";
 
 export const projectOne = {
@@ -29,16 +30,17 @@ export const projectThree = {
 };
 
 export const projectFour = {
-  name: "lyrics & tabs finder",
-  description: "SPA SEARCH ENGINE.",
-  image: mockedImage.src,
+  name: "what-2-eat",
+  description: "SPA THAT FETCHES RECIPES FROM A RESTFUL API.",
+  image: projectFourImage.src,
   link: BURN_ART,
   role: "Full Stack Dev.",
 };
 
 export const projectFive = {
-  name: "what-2-eat",
-  description: "SPA SEARCH ENGINE.",
+  name: "lyrics & tabs finder",
+  description:
+    "SPA THAT FETCHES LYRICS AND GUITAR TABS FROM TWO DIFFERENT RESTFUL APIS.",
   image: mockedImage.src,
   link: BURN_ART,
   role: "Full Stack Dev.",
@@ -48,6 +50,6 @@ export const projectsSlides = [
   { name: "octocorp", slide: 0 },
   { name: "burn.art", slide: 1 },
   { name: "whale", slide: 2 },
-  { name: "lyrics & tabs finder", slide: 3 },
-  { name: "what-2-eat", slide: 4 },
+  { name: "what-2-eat", slide: 3 },
+  { name: "lyrics & tabs finder", slide: 4 },
 ];
