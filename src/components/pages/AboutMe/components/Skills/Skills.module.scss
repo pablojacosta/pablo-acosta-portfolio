@@ -12,6 +12,10 @@
     padding: 0;
     gap: 2rem;
 
+    @include responsives.resolution__laptop__xxs {
+      gap: 1.3rem;
+    }
+
     @include responsives.resolution__mobile__l {
       gap: 1rem;
     }
@@ -33,6 +37,11 @@
         @include responsives.resolution__mobile__l {
           width: 3rem;
           height: 3rem;
+        }
+
+        @include responsives.resolution__mobile__s {
+          width: 3.5rem;
+          height: 3.5rem;
         }
 
         img {

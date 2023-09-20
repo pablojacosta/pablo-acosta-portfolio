@@ -22,7 +22,7 @@
     height: 18rem;
   }
 
-  @include responsives.resolution__mobile__s {
+  @include responsives.resolution__mobile {
     margin-bottom: 2rem;
     width: 14rem;
     height: 14rem;

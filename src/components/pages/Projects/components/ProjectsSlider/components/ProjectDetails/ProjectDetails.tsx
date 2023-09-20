@@ -3,6 +3,8 @@ import DetailsText from "./components/DetailsText";
 import DetailsImage from "./components/DetailsImage";
 import DetailsButton from "./components/DetailsButton";
 import useMediaQuery from "@hooks/useMediaQuery";
+import { EProjects } from "constants/enums";
+import { projectFour } from "constants/projects";
 
 interface IProjectDetails {
   image: string;
@@ -27,14 +29,22 @@ const ProjectDetails = ({
         <>
           <DetailsText name={name} description={description} role={role} />
           <DetailsImage image={image} link={link} />
-          <DetailsButton link={link} />
+          <div className={styles.buttons}>
+            <DetailsButton link={link} text={"Go To Website"} />
+            {name === EProjects.PROJECT_FOUR && (
+              <DetailsButton link={projectFour.code} text={"Project's Code"} />
+            )}
+          </div>
         </>
       ) : (
         <>
           <DetailsImage image={image} link={link} />
           <div className={styles.bottom}>
             <DetailsText name={name} description={description} role={role} />
-            <DetailsButton link={link} />
+            <DetailsButton link={link} text={"Go To Website"} />
+            {name === EProjects.PROJECT_FOUR && (
+              <DetailsButton link={projectFour.code} text={"Project's Code"} />
+            )}
           </div>
         </>
       )}

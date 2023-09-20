@@ -4,9 +4,10 @@ import styles from "./DetailsButton.module.scss";
 
 interface IDetailsButton {
   link: string;
+  text: string;
 }
 
-const DetailsButton = ({ link }: IDetailsButton) => {
+const DetailsButton = ({ link, text }: IDetailsButton) => {
   return (
     <Link
       href={link}
@@ -14,7 +15,7 @@ const DetailsButton = ({ link }: IDetailsButton) => {
       rel="noopener noreferrer"
       className={styles.detailsButton}
     >
-      <Button>Go To Website</Button>
+      <Button>{text}</Button>
     </Link>
   );
 };

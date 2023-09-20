@@ -66,13 +66,10 @@
     margin-bottom: 0;
     height: 2.5rem;
     text-align: center;
+    font-family: var(--font-secondary);
 
     &.active {
       color: var(--color-beta);
-    }
-
-    &:hover {
-      color: var(--color-white);
     }
 
     @include responsives.resolution__mobile__l {

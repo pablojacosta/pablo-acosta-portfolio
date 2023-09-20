@@ -1,4 +1,4 @@
-import { OCTOCORP } from "constants/externalLinks";
+import { OCTOCORP, WHAT_TO_EAT } from "constants/externalLinks";
 import Link from "next/link";
 import styles from "./DetailsImage.module.scss";
 
@@ -8,7 +8,8 @@ interface IDetailsImage {
 }
 
 const DetailsImage = ({ link, image }: IDetailsImage) => {
-  const secondClass = link !== OCTOCORP ? styles.secondClass : "";
+  const secondClass =
+    link !== OCTOCORP && link !== WHAT_TO_EAT ? styles.secondClass : "";
 
   return (
     <Link href={link} target="_blank" rel="noopener noreferrer">

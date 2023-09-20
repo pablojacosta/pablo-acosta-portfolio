@@ -23,19 +23,13 @@
   }
 
   @include responsives.resolution__mobile {
-    right: 30%;
-    height: 3rem;
-    width: 3rem;
-  }
-
-  @include responsives.resolution__mobile__s {
-    right: 30%;
+    right: 30.5%;
     top: 88%;
     height: 2.5rem;
     width: 2.5rem;
   }
 
   @include responsives.resolution__mobile__xxs {
-    right: 25%;
+    right: 26.5%;
   }
 }

@@ -23,12 +23,6 @@
   }
 
   @include responsives.resolution__mobile {
-    left: 28%;
-    height: 3rem;
-    width: 3rem;
-  }
-
-  @include responsives.resolution__mobile__s {
     left: 30%;
     top: 88%;
     height: 2.5rem;
