@@ -2,14 +2,8 @@
 
 .home {
   padding-top: 2rem;
-  height: 76.7vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
-  @include responsives.resolution__laptop__s {
-    height: auto;
-  }
 
   h1 {
     @include responsives.resolution__mobile__s {
@@ -143,6 +137,7 @@
   .bottom {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 1rem;
 
     @include responsives.resolution__laptop__s {
       justify-content: center;

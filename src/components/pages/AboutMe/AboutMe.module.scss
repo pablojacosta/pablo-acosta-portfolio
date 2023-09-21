@@ -2,11 +2,6 @@
 
 .aboutMe {
   padding-top: 2rem;
-  height: 76.7vh;
-
-  @include responsives.resolution__mobile {
-    height: 80vh;
-  }
 
   .content {
     display: flex;

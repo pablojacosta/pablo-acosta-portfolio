@@ -18,6 +18,18 @@
     align-items: center;
   }
 
+  @include responsives.resolution__mobile__l {
+    width: 70vh;
+  }
+
+  @include responsives.resolution__mobile {
+    width: 50vh;
+  }
+
+  @include responsives.resolution__mobile__s {
+    width: 30vh;
+  }
+
   .bottom {
     display: flex;
     align-items: flex-end;
