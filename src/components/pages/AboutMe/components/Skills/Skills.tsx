@@ -18,6 +18,8 @@ import IconFigma from "@components/elements/Icons/FigmaIcon/FigmIcon";
 import IconVite from "@components/elements/Icons/ViteIcon/ViteIcon";
 import zustand from "@images/zustand.png";
 import Image from "next/image";
+import IconJest from "@components/elements/Icons/JestIcon/Jest";
+import IconCloudflare from "@components/elements/Icons/CloudflareIcon/CloudflareIcon";
 
 const Skills = () => {
   return (
@@ -57,6 +59,10 @@ const Skills = () => {
           Javascript
         </li>
         <li>
+          <IconJest />
+          Jest
+        </li>
+        <li>
           <IconSass />
           Sass
         </li>
@@ -75,6 +81,10 @@ const Skills = () => {
         <li>
           <IconDocker />
           Docker
+        </li>
+        <li>
+          <IconCloudflare />
+          Cloudflare
         </li>
         <li>
           <IconFigma />

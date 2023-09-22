@@ -41,8 +41,8 @@ const Home = () => {
                 >
                   <p>
                     The technologies that I use are Typescript/Javascript,
-                    React, Next, Node, Vite, Zustand, SASS/CSS3, HTML5, MongoDb,
-                    Docker, Figma and Web3.
+                    React, Next, Node, Vite, Zustand, Jest, SASS/CSS3, HTML5,
+                    MongoDb, Docker, Cloudflare, Figma and Web3.
                   </p>
                 </div>
                 <div
