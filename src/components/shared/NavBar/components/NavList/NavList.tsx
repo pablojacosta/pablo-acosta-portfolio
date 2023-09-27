@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { ABOUT_ME, CONTACT, HOME, PROJECTS } from "constants/routes";
 import styles from "./NavList.module.scss";
+import AnimatedLink from "@components/elements/AnimatedLink";
 
 const NavList = () => {
   const { pathname } = useRouter();
@@ -13,24 +14,24 @@ const NavList = () => {
     <div className={styles.navList}>
       <ul>
         <li>
-          <Link href={HOME} className={addActiveClass(HOME)}>
+          <AnimatedLink href={HOME} className={addActiveClass(HOME)}>
             Home
-          </Link>
+          </AnimatedLink>
         </li>
         <li>
-          <Link href={PROJECTS} className={addActiveClass(PROJECTS)}>
+          <AnimatedLink href={PROJECTS} className={addActiveClass(PROJECTS)}>
             Works
-          </Link>
+          </AnimatedLink>
         </li>
         <li>
-          <Link href={ABOUT_ME} className={addActiveClass(ABOUT_ME)}>
+          <AnimatedLink href={ABOUT_ME} className={addActiveClass(ABOUT_ME)}>
             About me
-          </Link>
+          </AnimatedLink>
         </li>
         <li>
-          <Link href={CONTACT} className={addActiveClass(CONTACT)}>
+          <AnimatedLink href={CONTACT} className={addActiveClass(CONTACT)}>
             Contact
-          </Link>
+          </AnimatedLink>
         </li>
       </ul>
     </div>

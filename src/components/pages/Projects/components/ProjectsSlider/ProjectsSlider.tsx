@@ -53,7 +53,7 @@ const ProjectsSlider = () => {
   }, [selected]);
 
   return (
-    <div className={styles.projectsSlider}>
+    <div className={`${styles.projectsSlider} animatedContent`}>
       <Menu
         selected={selected}
         handleSelect={handleSelect}

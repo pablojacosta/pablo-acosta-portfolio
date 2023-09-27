@@ -16,8 +16,8 @@ const Home = () => {
     <Container>
       <div className={styles.home}>
         <div className={styles.top}>
-          <h1>Pablo Acosta&apos;s Portfolio</h1>
-          <div className={styles.content}>
+          <h1 className="animatedHeader">Pablo Acosta&apos;s Portfolio</h1>
+          <div className={`${styles.content} animatedContent`}>
             <div className={styles.leftSection}>
               <div className={styles.text}>
                 <div
