@@ -8,8 +8,8 @@ const Contact = () => {
   return (
     <Container>
       <div className={styles.contact}>
-        <h1>CONTACT</h1>
-        <div className={styles.content}>
+        <h1 className="animatedHeader">CONTACT</h1>
+        <div className={`${styles.content} animatedContent`}>
           <p>You can get in touch with me at:</p>
           <Link
             href="mailto:pablojacosta82@gmail.com"

@@ -8,8 +8,8 @@ const AboutMe = () => {
   return (
     <Container>
       <div className={styles.aboutMe}>
-        <h1>ABOUT ME</h1>
-        <div className={styles.content}>
+        <h1 className="animatedHeader">ABOUT ME</h1>
+        <div className={`${styles.content} animatedContent`}>
           <p>
             Hello! Thank you for being interested in my Portfolio.
             <span>
