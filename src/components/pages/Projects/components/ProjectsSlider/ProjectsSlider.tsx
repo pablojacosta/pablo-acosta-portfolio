@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import useMediaQuery from "hooks/useMediaQuery";
 import { findName, findSlide } from "utils/helpers/slider/slides";
 import {
+  projectFive,
   projectFour,
   projectOne,
   projectThree,
@@ -97,6 +98,15 @@ const ProjectsSlider = () => {
             description={projectFour.description}
             link={projectFour.link}
             role={projectFour.role}
+            code={projectFour.code}
+          />
+          <ProjectDetails
+            image={projectFive.image}
+            name={projectFive.name}
+            description={projectFive.description}
+            link={projectFive.link}
+            role={projectFive.role}
+            code={projectFive.code}
           />
         </Slider>
       </div>
