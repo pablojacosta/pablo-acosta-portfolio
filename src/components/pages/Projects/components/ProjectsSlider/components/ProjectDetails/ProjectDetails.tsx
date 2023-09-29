@@ -3,8 +3,6 @@ import DetailsText from "./components/DetailsText";
 import DetailsImage from "./components/DetailsImage";
 import DetailsButton from "./components/DetailsButton";
 import useMediaQuery from "@hooks/useMediaQuery";
-import { EProjects } from "constants/enums";
-import { projectFour } from "constants/projects";
 
 interface IProjectDetails {
   image: string;
@@ -12,6 +10,7 @@ interface IProjectDetails {
   description: string;
   link: string;
   role: string;
+  code?: string;
 }
 
 const ProjectDetails = ({
@@ -20,6 +19,7 @@ const ProjectDetails = ({
   description,
   link,
   role,
+  code,
 }: IProjectDetails) => {
   const isTabletBreakpoint = useMediaQuery(890);
 
@@ -31,9 +31,7 @@ const ProjectDetails = ({
           <DetailsImage image={image} link={link} />
           <div className={styles.buttons}>
             <DetailsButton link={link} text={"Go To Website"} />
-            {name === EProjects.PROJECT_FOUR && (
-              <DetailsButton link={projectFour.code} text={"Project's Code"} />
-            )}
+            {code && <DetailsButton link={code} text={"Project's Code"} />}
           </div>
         </>
       ) : (
@@ -42,9 +40,7 @@ const ProjectDetails = ({
           <div className={styles.bottom}>
             <DetailsText name={name} description={description} role={role} />
             <DetailsButton link={link} text={"Go To Website"} />
-            {name === EProjects.PROJECT_FOUR && (
-              <DetailsButton link={projectFour.code} text={"Project's Code"} />
-            )}
+            {code && <DetailsButton link={code} text={"Project's Code"} />}
           </div>
         </>
       )}
