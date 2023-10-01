@@ -4,8 +4,6 @@ import DetailsImage from "./components/DetailsImage";
 import DetailsButton from "./components/DetailsButton";
 import useMediaQuery from "@hooks/useMediaQuery";
 import DetailsUsedTech from "./components/DetailsUsedTech";
-import IconNextjs from "@components/elements/Icons/NextIcon/NextIcon";
-import Image from "next/image";
 
 interface IProjectDetails {
   image: string;
