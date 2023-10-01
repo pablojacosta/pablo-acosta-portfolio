@@ -18,6 +18,10 @@
     align-items: center;
   }
 
+  @include responsives.resolution__tablet {
+    padding-top: 1rem;
+  }
+
   @include responsives.resolution__mobile__l {
     width: 70vh;
   }
@@ -42,6 +46,17 @@
   }
 
   .buttons {
-    width: 11.214rem;
+    margin-right: -9.5rem;
+
+    @include responsives.resolution__laptop__xxs {
+      display: flex;
+      gap: 1rem;
+      margin-left: 3rem;
+      margin-right: 0;
+    }
+
+    @include responsives.resolution__mobile {
+      margin-left: 0;
+    }
   }
 }

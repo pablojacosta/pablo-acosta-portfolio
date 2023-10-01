@@ -1,3 +1,5 @@
+@use "@styles/_responsives" as responsives;
+
 .button {
   button {
     cursor: pointer;
@@ -14,6 +16,10 @@
 
     &:hover {
       filter: drop-shadow(0 0 0.625rem var(--color-beta));
+    }
+
+    @include responsives.resolution__laptop__xxs {
+      margin-left: 0;
     }
   }
 }

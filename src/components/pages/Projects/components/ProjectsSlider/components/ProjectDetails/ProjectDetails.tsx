@@ -27,38 +27,49 @@ const ProjectDetails = ({
   tech,
 }: IProjectDetails) => {
   const isTabletBreakpoint = useMediaQuery(890);
+  const isMobileBreakpoint = useMediaQuery(480);
 
   return (
     <div className={styles.projectDetails}>
-      {!isTabletBreakpoint ? (
+      {!isTabletBreakpoint && !isMobileBreakpoint && (
         <>
           <DetailsText name={name} description={description} role={role} />
           <div className={styles.center}>
             <DetailsImage image={image} link={link} />
-            <DetailsUsedTech>
-              <ul>
-                {tech.map((Icon, index) => {
-                  return (
-                    <li key={index}>
-                      <Icon key={index} />
-                    </li>
-                  );
-                })}
-              </ul>
-            </DetailsUsedTech>
+            <DetailsUsedTech tech={tech} />
           </div>
           <div className={styles.buttons}>
             <DetailsButton link={link} text={"Go To Website"} />
             {code && <DetailsButton link={code} text={"Project's Code"} />}
           </div>
         </>
-      ) : (
+      )}
+
+      {isTabletBreakpoint && !isMobileBreakpoint && (
         <>
           <DetailsImage image={image} link={link} />
+          <DetailsUsedTech tech={tech} />
           <div className={styles.bottom}>
             <DetailsText name={name} description={description} role={role} />
-            <DetailsButton link={link} text={"Go To Website"} />
-            {code && <DetailsButton link={code} text={"Project's Code"} />}
+            <div className={styles.buttons}>
+              <DetailsButton link={link} text={"Go To Website"} />
+              {code && <DetailsButton link={code} text={"Project's Code"} />}
+            </div>
+          </div>
+        </>
+      )}
+
+      {isTabletBreakpoint && isMobileBreakpoint && (
+        <>
+          <DetailsImage image={image} link={link} />
+
+          <div className={styles.bottom}>
+            <DetailsText name={name} description={description} role={role} />
+            <div className={styles.buttons}>
+              <DetailsButton link={link} text={"Go To Website"} />
+              {code && <DetailsButton link={code} text={"Project's Code"} />}
+            </div>
+            <DetailsUsedTech tech={tech} />
           </div>
         </>
       )}
