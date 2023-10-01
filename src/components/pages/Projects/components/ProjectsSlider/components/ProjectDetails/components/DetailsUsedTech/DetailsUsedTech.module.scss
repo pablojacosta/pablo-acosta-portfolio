@@ -1,0 +1,64 @@
+@use "@styles/_responsives" as responsives;
+
+.detailsUsedTech {
+  @include responsives.resolution__mobile {
+    margin-top: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+
+    @include responsives.resolution__tablet {
+      font-size: 1.2rem;
+    }
+
+    @include responsives.resolution__mobile {
+      font-size: 1rem;
+    }
+
+    @include responsives.resolution__mobile__s {
+      font-size: 0.875rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    justify-content: center;
+
+    li {
+      svg {
+        height: 1.2rem;
+        width: 1.2rem;
+
+        @include responsives.resolution__mobile {
+          height: 1rem;
+          width: 1rem;
+        }
+
+        @include responsives.resolution__mobile__xxs {
+          height: 0.8rem;
+          width: 0.8rem;
+        }
+      }
+
+      &.zustand {
+        img {
+          object-fit: cover;
+          margin-left: -0.5rem;
+          filter: grayscale(100%);
+
+          @include responsives.resolution__mobile {
+            margin-top: -0.1rem;
+          }
+
+          @include responsives.resolution__mobile__xxs {
+            margin-top: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+}

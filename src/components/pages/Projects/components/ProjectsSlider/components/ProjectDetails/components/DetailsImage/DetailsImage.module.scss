@@ -1,7 +1,7 @@
 @use "@styles/_responsives" as responsives;
 
 .detailsImage {
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
   object-fit: cover;
   width: 23.75rem;
   height: 23.75rem;
@@ -9,23 +9,19 @@
 
   @include responsives.resolution__laptop__xxs {
     margin-bottom: 1rem;
-  }
-
-  @include responsives.resolution__tablet {
-    margin-bottom: 1rem;
     width: 19rem;
     height: 19rem;
   }
 
-  @include responsives.resolution__mobile {
-    width: 18rem;
-    height: 18rem;
+  @include responsives.resolution__tablet {
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 15rem;
   }
 
   @include responsives.resolution__mobile {
-    margin-bottom: 2rem;
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
   }
 
   &.secondClass {

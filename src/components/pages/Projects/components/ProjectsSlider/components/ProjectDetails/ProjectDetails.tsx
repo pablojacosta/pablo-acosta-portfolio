@@ -3,6 +3,7 @@ import DetailsText from "./components/DetailsText";
 import DetailsImage from "./components/DetailsImage";
 import DetailsButton from "./components/DetailsButton";
 import useMediaQuery from "@hooks/useMediaQuery";
+import DetailsUsedTech from "./components/DetailsUsedTech";
 
 interface IProjectDetails {
   image: string;
@@ -11,6 +12,7 @@ interface IProjectDetails {
   link: string;
   role: string;
   code?: string;
+  tech: any[];
 }
 
 const ProjectDetails = ({
@@ -20,27 +22,52 @@ const ProjectDetails = ({
   link,
   role,
   code,
+  tech,
 }: IProjectDetails) => {
   const isTabletBreakpoint = useMediaQuery(890);
+  const isMobileBreakpoint = useMediaQuery(480);
 
   return (
     <div className={styles.projectDetails}>
-      {!isTabletBreakpoint ? (
+      {!isTabletBreakpoint && !isMobileBreakpoint && (
         <>
           <DetailsText name={name} description={description} role={role} />
-          <DetailsImage image={image} link={link} />
+          <div className={styles.center}>
+            <DetailsImage image={image} link={link} />
+            <DetailsUsedTech tech={tech} />
+          </div>
           <div className={styles.buttons}>
             <DetailsButton link={link} text={"Go To Website"} />
             {code && <DetailsButton link={code} text={"Project's Code"} />}
           </div>
         </>
-      ) : (
+      )}
+
+      {isTabletBreakpoint && !isMobileBreakpoint && (
         <>
           <DetailsImage image={image} link={link} />
+          <DetailsUsedTech tech={tech} />
           <div className={styles.bottom}>
             <DetailsText name={name} description={description} role={role} />
-            <DetailsButton link={link} text={"Go To Website"} />
-            {code && <DetailsButton link={code} text={"Project's Code"} />}
+            <div className={styles.buttons}>
+              <DetailsButton link={link} text={"Go To Website"} />
+              {code && <DetailsButton link={code} text={"Project's Code"} />}
+            </div>
+          </div>
+        </>
+      )}
+
+      {isTabletBreakpoint && isMobileBreakpoint && (
+        <>
+          <DetailsImage image={image} link={link} />
+
+          <div className={styles.bottom}>
+            <DetailsText name={name} description={description} role={role} />
+            <div className={styles.buttons}>
+              <DetailsButton link={link} text={"Go To Website"} />
+              {code && <DetailsButton link={code} text={"Project's Code"} />}
+            </div>
+            <DetailsUsedTech tech={tech} />
           </div>
         </>
       )}
