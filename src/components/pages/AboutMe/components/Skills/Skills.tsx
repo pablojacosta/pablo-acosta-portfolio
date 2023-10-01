@@ -20,6 +20,8 @@ import zustand from "@images/zustand.png";
 import Image from "next/image";
 import IconJest from "@components/elements/Icons/JestIcon/Jest";
 import IconCloudflare from "@components/elements/Icons/CloudflareIcon/CloudflareIcon";
+import IconNetlify from "@components/elements/Icons/NetlifyIcon/NetlifyIcon";
+import IconNpm from "@components/elements/Icons/NpmIcon/NpmIcon";
 
 const Skills = () => {
   return (
@@ -87,12 +89,20 @@ const Skills = () => {
           Cloudflare
         </li>
         <li>
+          <IconNetlify />
+          Netlify
+        </li>
+        <li>
           <IconFigma />
           Figma
         </li>
         <li>
           <IconStorybook />
           Storybook
+        </li>
+        <li>
+          <IconNpm />
+          Npm
         </li>
         <li>
           <IconJirasoftware />
