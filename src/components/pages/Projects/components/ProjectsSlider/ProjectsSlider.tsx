@@ -16,6 +16,23 @@ import {
   projectThree,
   projectTwo,
 } from "constants/projects";
+import IconNextjs from "@components/elements/Icons/NextIcon/NextIcon";
+import IconReact from "@components/elements/Icons/ReactIcon/ReactIcon";
+import IconSass from "@components/elements/Icons/SassIcon/SassIcon";
+import IconCloudflare from "@components/elements/Icons/CloudflareIcon/CloudflareIcon";
+import IconFigma from "@components/elements/Icons/FigmaIcon/FigmIcon";
+import IconNodejs from "@components/elements/Icons/NodeIcon/NodeIcon";
+import IconTypescript from "@components/elements/Icons/TypescriptIcon/TypescriptIcon";
+import IconWeb3dotjs from "@components/elements/Icons/Web3Icon/Web3Icon";
+import IconJest from "@components/elements/Icons/JestIcon/Jest";
+import IconVite from "@components/elements/Icons/ViteIcon/ViteIcon";
+import Icon488Git from "@components/elements/Icons/GitIcon/GitIcon";
+import IconBxlMongodb from "@components/elements/Icons/MongoIcon/MongoIcon";
+import IconDocker from "@components/elements/Icons/DockerIcon/DockerIcon";
+import IconLogoJavascript from "@components/elements/Icons/JsIcon/JsIcon";
+import IconStorybook from "@components/elements/Icons/StorybookIcon/StorybookIcon";
+import IconNetlify from "@components/elements/Icons/NetlifyIcon/NetlifyIcon";
+import IconNpm from "@components/elements/Icons/NpmIcon/NpmIcon";
 
 const ProjectsSlider = () => {
   const [selected, setSelected] = useState("octocorp");
@@ -77,6 +94,18 @@ const ProjectsSlider = () => {
             description={projectOne.description}
             link={projectOne.link}
             role={projectOne.role}
+            tech={[
+              IconNextjs,
+              IconReact,
+              IconTypescript,
+              IconSass,
+              IconNodejs,
+              IconWeb3dotjs,
+              IconJest,
+              Icon488Git,
+              IconCloudflare,
+              IconFigma,
+            ]}
           />
           <ProjectDetails
             image={projectTwo.image}
@@ -84,6 +113,20 @@ const ProjectsSlider = () => {
             description={projectTwo.description}
             link={projectTwo.link}
             role={projectTwo.role}
+            tech={[
+              IconNextjs,
+              IconReact,
+              IconTypescript,
+              IconSass,
+              IconNodejs,
+              IconWeb3dotjs,
+              IconJest,
+              IconBxlMongodb,
+              IconDocker,
+              Icon488Git,
+              IconCloudflare,
+              IconFigma,
+            ]}
           />
           <ProjectDetails
             image={projectThree.image}
@@ -91,6 +134,20 @@ const ProjectsSlider = () => {
             description={projectThree.description}
             link={projectThree.link}
             role={projectThree.role}
+            tech={[
+              IconNextjs,
+              IconReact,
+              IconTypescript,
+              IconSass,
+              IconNodejs,
+              IconWeb3dotjs,
+              IconJest,
+              IconBxlMongodb,
+              IconDocker,
+              Icon488Git,
+              IconCloudflare,
+              IconFigma,
+            ]}
           />
           <ProjectDetails
             image={projectFour.image}
@@ -99,6 +156,15 @@ const ProjectsSlider = () => {
             link={projectFour.link}
             role={projectFour.role}
             code={projectFour.code}
+            tech={[
+              IconVite,
+              IconReact,
+              IconTypescript,
+              IconSass,
+              IconNodejs,
+              Icon488Git,
+              IconNetlify,
+            ]}
           />
           <ProjectDetails
             image={projectFive.image}
@@ -107,6 +173,15 @@ const ProjectsSlider = () => {
             link={projectFive.link}
             role={projectFive.role}
             code={projectFive.code}
+            tech={[
+              IconNpm,
+              IconReact,
+              IconTypescript,
+              IconStorybook,
+              IconNodejs,
+              Icon488Git,
+              IconNetlify,
+            ]}
           />
         </Slider>
       </div>
