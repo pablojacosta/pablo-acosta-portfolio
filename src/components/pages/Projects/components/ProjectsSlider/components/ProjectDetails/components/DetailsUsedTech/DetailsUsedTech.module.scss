@@ -43,6 +43,22 @@
           width: 0.8rem;
         }
       }
+
+      &.zustand {
+        img {
+          object-fit: cover;
+          margin-left: -0.5rem;
+          filter: grayscale(100%);
+
+          @include responsives.resolution__mobile {
+            margin-top: -0.1rem;
+          }
+
+          @include responsives.resolution__mobile__xxs {
+            margin-top: 0.1rem;
+          }
+        }
+      }
     }
   }
 }
