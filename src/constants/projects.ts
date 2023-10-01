@@ -2,7 +2,7 @@ import projectOneImage from "@images/project-one.png";
 import projectTwoImage from "@images/project-two.jpg";
 import projectThreeImage from "@images/project-three.jpg";
 import projectFourImage from "@images/what-2-eat.png";
-import projectFiveImage from "@images/ckeditor-comp.png";
+import projectFiveImage from "@images/ckeditor-storybook.png";
 import {
   BURN_ART,
   NPM_PACKAGE,
