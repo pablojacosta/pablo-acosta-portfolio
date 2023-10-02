@@ -10,3 +10,6 @@ export const NPM_PACKAGE =
   "https://www.npmjs.com/package/@milludds/ckeditor-component";
 export const NPM_PACKAGE_CODE =
   "https://github.com/pablojacosta/ckeditor-component";
+export const LYRICS_AND_TABS = "https://lyrics-and-tabs-finder.onrender.com/";
+export const LYRICS_AND_TABS_CODE =
+  "https://github.com/pablojacosta/lyrics-tabs-app-front";

@@ -58,6 +58,11 @@ const Menu = ({ selected, handleSelect, nav, handleSetNav }: IMenu) => {
             className={setClass(EProjects.PROJECT_FIVE)}
             onClick={() => handleSelect(EProjects.PROJECT_FIVE)}
           />
+          <MenuItem
+            name={EProjects.PROJECT_SIX}
+            className={setClass(EProjects.PROJECT_SIX)}
+            onClick={() => handleSelect(EProjects.PROJECT_SIX)}
+          />
         </ul>
       ) : (
         <Slider
@@ -99,6 +104,13 @@ const Menu = ({ selected, handleSelect, nav, handleSetNav }: IMenu) => {
             )}`}
           >
             {EProjects.PROJECT_FIVE}
+          </div>
+          <div
+            className={`${styles.sliderItem} ${setClass(
+              EProjects.PROJECT_SIX
+            )}`}
+          >
+            {EProjects.PROJECT_SIX}
           </div>
         </Slider>
       )}
