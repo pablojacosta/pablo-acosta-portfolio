@@ -13,6 +13,7 @@ import {
   projectFive,
   projectFour,
   projectOne,
+  projectSix,
   projectThree,
   projectTwo,
 } from "constants/projects";
@@ -29,10 +30,10 @@ import IconVite from "@components/elements/Icons/ViteIcon/ViteIcon";
 import Icon488Git from "@components/elements/Icons/GitIcon/GitIcon";
 import IconBxlMongodb from "@components/elements/Icons/MongoIcon/MongoIcon";
 import IconDocker from "@components/elements/Icons/DockerIcon/DockerIcon";
-import IconLogoJavascript from "@components/elements/Icons/JsIcon/JsIcon";
 import IconStorybook from "@components/elements/Icons/StorybookIcon/StorybookIcon";
 import IconNetlify from "@components/elements/Icons/NetlifyIcon/NetlifyIcon";
 import IconNpm from "@components/elements/Icons/NpmIcon/NpmIcon";
+import IconRender from "@components/elements/Icons/RenderIcon/RenderIcon";
 
 const ProjectsSlider = () => {
   const [selected, setSelected] = useState("octocorp");
@@ -181,6 +182,23 @@ const ProjectsSlider = () => {
               IconNodejs,
               Icon488Git,
               IconNetlify,
+            ]}
+          />
+          <ProjectDetails
+            image={projectSix.image}
+            name={projectSix.name}
+            description={projectSix.description}
+            link={projectSix.link}
+            role={projectSix.role}
+            code={projectSix.code}
+            tech={[
+              IconVite,
+              IconReact,
+              IconTypescript,
+              IconSass,
+              IconNodejs,
+              Icon488Git,
+              IconRender,
             ]}
           />
         </Slider>

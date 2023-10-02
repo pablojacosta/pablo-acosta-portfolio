@@ -3,8 +3,11 @@ import projectTwoImage from "@images/project-two.jpg";
 import projectThreeImage from "@images/project-three.jpg";
 import projectFourImage from "@images/what-2-eat.png";
 import projectFiveImage from "@images/ckeditor-storybook.png";
+import projectSixImage from "@images/lyrics-and-tabs.png";
 import {
   BURN_ART,
+  LYRICS_AND_TABS,
+  LYRICS_AND_TABS_CODE,
   NPM_PACKAGE,
   NPM_PACKAGE_CODE,
   OCTOCORP,
@@ -55,10 +58,20 @@ export const projectFive = {
   code: NPM_PACKAGE_CODE,
 };
 
+export const projectSix = {
+  name: "lyrics&tabs",
+  description: "SPA THAT FETCHES LYRICS & TABS FROM RESTFUL APIs.",
+  image: projectSixImage.src,
+  link: LYRICS_AND_TABS,
+  role: "Full Stack Dev.",
+  code: LYRICS_AND_TABS_CODE,
+};
+
 export const projectsSlides = [
   { name: "octocorp", slide: 0 },
   { name: "burn.art", slide: 1 },
   { name: "whale", slide: 2 },
   { name: "what-2-eat", slide: 3 },
   { name: "ck-comp", slide: 4 },
+  { name: "lyrics&tabs", slide: 5 },
 ];

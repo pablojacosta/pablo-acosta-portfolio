@@ -4,4 +4,5 @@ export const enum EProjects {
   PROJECT_THREE = "whale",
   PROJECT_FOUR = "what-2-eat",
   PROJECT_FIVE = "ck-comp",
+  PROJECT_SIX = "lyrics&tabs",
 }
