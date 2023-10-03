@@ -1,4 +1,4 @@
-import projectOneImage from "@images/project-one.png";
+import projectOneImage from "@images/octocorp_img.png";
 import projectTwoImage from "@images/project-two.jpg";
 import projectThreeImage from "@images/project-three.jpg";
 import projectFourImage from "@images/what-2-eat.png";
