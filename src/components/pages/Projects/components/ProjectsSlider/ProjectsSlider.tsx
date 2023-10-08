@@ -164,7 +164,6 @@ const ProjectsSlider = () => {
               IconSass,
               IconNodejs,
               Icon488Git,
-              IconNetlify,
             ]}
           />
           <ProjectDetails
@@ -181,7 +180,6 @@ const ProjectsSlider = () => {
               IconStorybook,
               IconNodejs,
               Icon488Git,
-              IconNetlify,
             ]}
           />
           <ProjectDetails
