@@ -8,7 +8,8 @@
       "@hooks/*": ["./hooks/*"],
       "@styles/*": ["./styles/*"],
       "@elements/*": ["./components/elements/*"],
-      "@pages/*": ["./components/pages/*"]
+      "@pages/*": ["./components/pages/*"],
+      "@constants/*": ["./constants/*"]
     }
   }
 }

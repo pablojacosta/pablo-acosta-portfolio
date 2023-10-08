@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import NavBar from "@components/shared/NavBar/NavBar";
 import Footer from "@components/shared/Footer/Footer";
 import { CONTACT } from "constants/routes";
+import { METATAGS } from "@constants/metatags";
 
 export default function App({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
@@ -13,7 +14,13 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div id="app">
       <Head>
-        <meta name="description" content="Pablo Acosta - Portfolio" />
+        <meta name="description" content={METATAGS.description} />
+        <meta name="author" content={METATAGS.author} />
+        <meta property="og:title" content={METATAGS.title} />
+        <meta property="og:description" content={METATAGS.description} />
+        <meta property="og:image" content={METATAGS.og_image} />
+        <meta property="og:type" content={METATAGS.og_type} />
+        <meta property="og:url" content={METATAGS.og_url} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
