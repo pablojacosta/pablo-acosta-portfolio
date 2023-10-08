@@ -13,4 +13,4 @@ export const NPM_PACKAGE_CODE =
 export const LYRICS_AND_TABS = "https://lyrics-and-tabs-finder.onrender.com/";
 export const LYRICS_AND_TABS_CODE =
   "https://github.com/pablojacosta/lyrics-tabs-app-front";
-export const OG_IMAGE = "https://photos.app.goo.gl/hkCza38QSvfFtCqL7";
+export const OG_IMAGE = "https://imgbox.com/xxIGEoAc";
