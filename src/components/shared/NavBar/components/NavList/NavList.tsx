@@ -19,9 +19,9 @@ const NavList = () => {
           </AnimatedLink>
         </li>
         <li>
-          <AnimatedLink href={PROJECTS} className={addActiveClass(PROJECTS)}>
+          <Link href={PROJECTS} className={addActiveClass(PROJECTS)}>
             Works
-          </AnimatedLink>
+          </Link>
         </li>
         <li>
           <AnimatedLink href={ABOUT_ME} className={addActiveClass(ABOUT_ME)}>
