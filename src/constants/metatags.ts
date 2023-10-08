@@ -1,5 +1,5 @@
+import { OG_IMAGE } from "./externalLinks";
 import { WEB_DOMAIN } from "./webDomain";
-import og_image from "@images/portfolio_og.png";
 
 export const METATAGS: IMetatags = {
   author: "Pablo Acosta",
@@ -7,7 +7,7 @@ export const METATAGS: IMetatags = {
   description: "Pablo Acosta's Portfolio",
   og_url: WEB_DOMAIN,
   og_type: "website",
-  og_image: og_image.src,
+  og_image: OG_IMAGE,
 };
 
 interface IMetatags {
