@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <Container>
       <div className={styles.projects}>
-        <h1 className="animatedHeader">
+        <h1>
           Works <span>/</span> Projects
         </h1>
         <ProjectsSlider />
