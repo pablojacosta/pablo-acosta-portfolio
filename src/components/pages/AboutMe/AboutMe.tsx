@@ -21,7 +21,7 @@ const AboutMe = () => {
             Argentina.
           </p>
           <p>
-            I&apos;m a self-taught • curious • dinamic • fast-learning Full
+            I&apos;m a self-taught • curious • dynamic • fast-learning Full
             Stack Developer / Recording Engineer / Musician / Tech-Enthusiast.
           </p>
           <p>These are some of my skills:</p>
