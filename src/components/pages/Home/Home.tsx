@@ -32,7 +32,7 @@ const Home = () => {
                   className={`${styles.square} ${styles.border} ${styles.middleParagraphs}`}
                 >
                   <p>
-                    I&apos;m curious and dinamic by nature and passionate about
+                    I&apos;m curious and dynamic by nature and passionate about
                     building web solutions and experiences.
                   </p>
                 </div>
