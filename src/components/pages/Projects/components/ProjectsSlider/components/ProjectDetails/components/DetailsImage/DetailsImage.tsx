@@ -1,4 +1,5 @@
 import {
+  BANDCAMPIFY,
   LYRICS_AND_TABS,
   OCTOCORP,
   WHAT_TO_EAT,
@@ -14,7 +15,8 @@ interface IDetailsImage {
 const DetailsImage = ({ link, image }: IDetailsImage) => {
   const secondClass =
     link !== OCTOCORP && link !== WHAT_TO_EAT ? styles.secondClass : "";
-  const lyricsClass = link === LYRICS_AND_TABS ? styles.lyrics : "";
+  const coverImageClass =
+    link === LYRICS_AND_TABS || link === BANDCAMPIFY ? styles.coverImage : "";
 
   return (
     <Link href={link} target="_blank" rel="noopener noreferrer">
@@ -22,7 +24,7 @@ const DetailsImage = ({ link, image }: IDetailsImage) => {
         <img
           src={image}
           alt="Project Image"
-          className={`${styles.detailsImage} ${secondClass} ${lyricsClass}`}
+          className={`${styles.detailsImage} ${secondClass} ${coverImageClass}`}
         />
       </picture>
     </Link>

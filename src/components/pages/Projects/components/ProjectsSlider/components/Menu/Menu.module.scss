@@ -10,7 +10,7 @@
     display: flex;
     gap: 2.5rem;
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 135%;
     letter-spacing: 0.0675rem;
     color: var(--color-gray);
@@ -20,14 +20,14 @@
     justify-content: center;
 
     @include responsives.resolution__laptop__ms {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       height: 2rem;
       gap: 1rem;
       letter-spacing: 0.05rem;
     }
 
     @include responsives.resolution__laptop__xxs {
-      font-size: 0.875rem;
+      font-size: 0.75rem;
     }
 
     li {

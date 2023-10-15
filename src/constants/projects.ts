@@ -4,7 +4,10 @@ import projectThreeImage from "@images/project-three.jpg";
 import projectFourImage from "@images/what-2-eat.png";
 import projectFiveImage from "@images/ckeditor-storybook.png";
 import projectSixImage from "@images/lyrics-and-tabs.png";
+import projectSevenImage from "@images/bandcampify.png";
 import {
+  BANDCAMPIFY,
+  BANDCAMPIFY_CODE,
   BURN_ART,
   LYRICS_AND_TABS,
   LYRICS_AND_TABS_CODE,
@@ -67,11 +70,21 @@ export const projectSix = {
   code: LYRICS_AND_TABS_CODE,
 };
 
+export const projectSeven = {
+  name: "bandcampify",
+  description: "SPA THAT EMULATES SPOT*FY SCRAPING DATA FROM BANDC@MP",
+  image: projectSevenImage.src,
+  link: BANDCAMPIFY,
+  role: "Full Stack Dev.",
+  code: BANDCAMPIFY_CODE,
+};
+
 export const projectsSlides = [
   { name: "octocorp", slide: 0 },
-  { name: "burn.art", slide: 1 },
-  { name: "whale", slide: 2 },
-  { name: "what-2-eat", slide: 3 },
-  { name: "ck-comp", slide: 4 },
-  { name: "lyrics&tabs", slide: 5 },
+  { name: "bandcampify", slide: 1 },
+  { name: "burn.art", slide: 2 },
+  { name: "whale", slide: 3 },
+  { name: "what-2-eat", slide: 4 },
+  { name: "ck-comp", slide: 5 },
+  { name: "lyrics&tabs", slide: 6 },
 ];

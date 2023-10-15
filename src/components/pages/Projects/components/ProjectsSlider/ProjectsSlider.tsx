@@ -13,6 +13,7 @@ import {
   projectFive,
   projectFour,
   projectOne,
+  projectSeven,
   projectSix,
   projectThree,
   projectTwo,
@@ -106,6 +107,23 @@ const ProjectsSlider = () => {
               Icon488Git,
               IconCloudflare,
               IconFigma,
+            ]}
+          />
+          <ProjectDetails
+            image={projectSeven.image}
+            name={projectSeven.name}
+            description={projectSeven.description}
+            link={projectSeven.link}
+            role={projectSeven.role}
+            code={projectSeven.code}
+            tech={[
+              IconVite,
+              IconReact,
+              IconTypescript,
+              IconSass,
+              IconNodejs,
+              Icon488Git,
+              IconRender,
             ]}
           />
           <ProjectDetails
