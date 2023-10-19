@@ -14,6 +14,6 @@ export const LYRICS_AND_TABS = "https://lyrics-and-tabs-finder.onrender.com/";
 export const LYRICS_AND_TABS_CODE =
   "https://github.com/pablojacosta/lyrics-tabs-app-front";
 export const OG_IMAGE = "https://images2.imgbox.com/5c/fc/xxIGEoAc_o.png";
-export const BANDCAMPIFY = "https://bandcampify.onrender.com/";
+export const BANDCAMPIFY = "https://bandcampify.netlify.app/";
 export const BANDCAMPIFY_CODE =
   "https://github.com/pablojacosta/bandcampify-app";
