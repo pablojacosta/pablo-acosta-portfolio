@@ -3,7 +3,7 @@ import projectTwoImage from "@images/project-two.jpg";
 import projectThreeImage from "@images/project-three.jpg";
 import projectFourImage from "@images/what-2-eat.png";
 import projectFiveImage from "@images/ckeditor-storybook.png";
-import projectSixImage from "@images/lyrics-and-tabs.png";
+import projectSixImage from "@images/lyrics_and_tabs_finder.png";
 import projectSevenImage from "@images/bandcampify.png";
 import {
   BANDCAMPIFY,
