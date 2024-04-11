@@ -5,11 +5,13 @@ import useMediaQuery from "@hooks/useMediaQuery";
 
 interface IDetailsUsedTech {
   tech: any[];
+  project: string;
 }
 
-const DetailsUsedTech = ({ tech }: IDetailsUsedTech) => {
+const DetailsUsedTech = ({ tech, project }: IDetailsUsedTech) => {
   const isMobileBreakpoint = useMediaQuery(370);
   const zustandHeight = !isMobileBreakpoint ? 20 : 15;
+  const showZustand = project === "bandcampify" || project === "octoCorp";
 
   return (
     <div className={styles.detailsUsedTech}>
@@ -22,14 +24,16 @@ const DetailsUsedTech = ({ tech }: IDetailsUsedTech) => {
             </li>
           );
         })}
-        <li className={styles.zustand}>
-          <Image
-            src={zustand.src}
-            alt="Zustand Icon"
-            width={30}
-            height={zustandHeight}
-          />
-        </li>
+        {showZustand && (
+          <li className={styles.zustand}>
+            <Image
+              src={zustand.src}
+              alt="Zustand Icon"
+              width={30}
+              height={zustandHeight}
+            />
+          </li>
+        )}
       </ul>
     </div>
   );

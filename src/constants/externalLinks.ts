@@ -17,3 +17,5 @@ export const OG_IMAGE = "https://images2.imgbox.com/5c/fc/xxIGEoAc_o.png";
 export const BANDCAMPIFY = "https://bandcampify.netlify.app/";
 export const BANDCAMPIFY_CODE =
   "https://github.com/pablojacosta/bandcampify-app";
+export const SCHOOL_APP = "https://room-manager-school-app.netlify.app/";
+export const SCHOOL_APP_CODE = "https://github.com/pablojacosta/school-app";

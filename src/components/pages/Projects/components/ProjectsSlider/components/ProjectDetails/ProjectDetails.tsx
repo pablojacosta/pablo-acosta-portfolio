@@ -34,7 +34,7 @@ const ProjectDetails = ({
           <DetailsText name={name} description={description} role={role} />
           <div className={styles.center}>
             <DetailsImage image={image} link={link} />
-            <DetailsUsedTech tech={tech} />
+            <DetailsUsedTech tech={tech} project={name} />
           </div>
           <div className={styles.buttons}>
             <DetailsButton link={link} text={"Go To Website"} />
@@ -46,7 +46,7 @@ const ProjectDetails = ({
       {isTabletBreakpoint && !isMobileBreakpoint && (
         <>
           <DetailsImage image={image} link={link} />
-          <DetailsUsedTech tech={tech} />
+          <DetailsUsedTech tech={tech} project={name} />
           <div className={styles.bottom}>
             <DetailsText name={name} description={description} role={role} />
             <div className={styles.buttons}>
@@ -67,7 +67,7 @@ const ProjectDetails = ({
               <DetailsButton link={link} text={"Go To Website"} />
               {code && <DetailsButton link={code} text={"Project's Code"} />}
             </div>
-            <DetailsUsedTech tech={tech} />
+            <DetailsUsedTech tech={tech} project={name} />
           </div>
         </>
       )}
