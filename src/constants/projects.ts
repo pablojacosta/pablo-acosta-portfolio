@@ -5,6 +5,7 @@ import projectFourImage from "@images/what-2-eat.png";
 import projectFiveImage from "@images/ckeditor-storybook.png";
 import projectSixImage from "@images/lyrics_and_tabs_finder.png";
 import projectSevenImage from "@images/bandcampify.png";
+import projectEightImage from "@images/school-app.png";
 import {
   BANDCAMPIFY,
   BANDCAMPIFY_CODE,
@@ -17,6 +18,8 @@ import {
   WHALE,
   WHAT_TO_EAT,
   WHAT_TO_EAT_CODE,
+  SCHOOL_APP,
+  SCHOOL_APP_CODE,
 } from "./externalLinks";
 
 export const projectOne = {
@@ -72,11 +75,20 @@ export const projectSix = {
 
 export const projectSeven = {
   name: "bandcampify",
-  description: "SPA THAT EMULATES SPOT*FY SCRAPING DATA FROM BANDC@MP",
+  description: "SPOTIFY-LIKE APP THAT SCRAPES DATA FROM BANDCAMP",
   image: projectSevenImage.src,
   link: BANDCAMPIFY,
   role: "Full Stack Dev.",
   code: BANDCAMPIFY_CODE,
+};
+
+export const projectEight = {
+  name: "room-app",
+  description: "ROOM MANAGEMENT APP",
+  image: projectEightImage.src,
+  link: SCHOOL_APP,
+  role: "Full Stack Dev.",
+  code: SCHOOL_APP_CODE,
 };
 
 export const projectsSlides = [
@@ -84,7 +96,8 @@ export const projectsSlides = [
   { name: "bandcampify", slide: 1 },
   { name: "burn.art", slide: 2 },
   { name: "whale", slide: 3 },
-  { name: "what-2-eat", slide: 4 },
-  { name: "ck-comp", slide: 5 },
-  { name: "lyrics&tabs", slide: 6 },
+  { name: "room-app", slide: 4 },
+  { name: "what-2-eat", slide: 5 },
+  { name: "ck-comp", slide: 6 },
+  { name: "lyrics&tabs", slide: 7 },
 ];

@@ -17,6 +17,7 @@ import {
   projectSix,
   projectThree,
   projectTwo,
+  projectEight,
 } from "constants/projects";
 import IconNextjs from "@components/elements/Icons/NextIcon/NextIcon";
 import IconReact from "@components/elements/Icons/ReactIcon/ReactIcon";
@@ -166,6 +167,23 @@ const ProjectsSlider = () => {
               Icon488Git,
               IconCloudflare,
               IconFigma,
+            ]}
+          />
+          <ProjectDetails
+            image={projectEight.image}
+            name={projectEight.name}
+            description={projectEight.description}
+            link={projectEight.link}
+            role={projectEight.role}
+            code={projectEight.code}
+            tech={[
+              IconNextjs,
+              IconReact,
+              IconBxlMongodb,
+              IconTypescript,
+              IconSass,
+              IconRender,
+              IconNetlify,
             ]}
           />
           <ProjectDetails
