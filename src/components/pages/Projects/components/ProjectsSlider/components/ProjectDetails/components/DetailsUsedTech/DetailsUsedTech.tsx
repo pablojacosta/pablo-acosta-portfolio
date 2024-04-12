@@ -11,7 +11,11 @@ interface IDetailsUsedTech {
 const DetailsUsedTech = ({ tech, project }: IDetailsUsedTech) => {
   const isMobileBreakpoint = useMediaQuery(370);
   const zustandHeight = !isMobileBreakpoint ? 20 : 15;
-  const showZustand = project === "bandcampify" || project === "octoCorp";
+  const showZustand =
+    project === "bandcampify" ||
+    project === "octoCorp" ||
+    project === "what-2-eat" ||
+    project === "lyrics&tabs";
 
   return (
     <div className={styles.detailsUsedTech}>
