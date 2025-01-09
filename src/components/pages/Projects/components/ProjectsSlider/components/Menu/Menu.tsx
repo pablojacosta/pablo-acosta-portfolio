@@ -1,10 +1,10 @@
+import { EProjects } from "constants/enums";
+import useMediaQuery from "hooks/useMediaQuery";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import styles from "./Menu.module.scss";
 import MenuItem from "./MenuItem/MenuItem";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import useMediaQuery from "hooks/useMediaQuery";
-import { EProjects } from "constants/enums";
 
 interface IMenu {
   selected: string;
@@ -33,6 +33,11 @@ const Menu = ({ selected, handleSelect, nav, handleSetNav }: IMenu) => {
     <div className={styles.menu}>
       {!isTabletBreakpoint ? (
         <ul>
+          <MenuItem
+            name={EProjects.PROJECT_NINE}
+            className={setClass(EProjects.PROJECT_NINE)}
+            onClick={() => handleSelect(EProjects.PROJECT_NINE)}
+          />
           <MenuItem
             name={EProjects.PROJECT_ONE}
             className={setClass(EProjects.PROJECT_ONE)}
@@ -80,6 +85,13 @@ const Menu = ({ selected, handleSelect, nav, handleSetNav }: IMenu) => {
           asNavFor={nav}
           ref={(slider) => handleSetNav(slider)}
         >
+          <div
+            className={`${styles.sliderItem} ${setClass(
+              EProjects.PROJECT_NINE
+            )}`}
+          >
+            {EProjects.PROJECT_NINE}
+          </div>
           <div
             className={`${styles.sliderItem} ${setClass(
               EProjects.PROJECT_ONE

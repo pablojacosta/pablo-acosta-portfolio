@@ -1,25 +1,27 @@
-import projectOneImage from "@images/octocorp_img.png";
-import projectTwoImage from "@images/project-two.jpg";
-import projectThreeImage from "@images/project-three.jpg";
-import projectFourImage from "@images/what-2-eat.png";
+import projectSevenImage from "@images/bandcampify.png";
+import projectNineImage from "@images/buildtree.png";
 import projectFiveImage from "@images/ckeditor-storybook.png";
 import projectSixImage from "@images/lyrics_and_tabs_finder.png";
-import projectSevenImage from "@images/bandcampify.png";
+import projectOneImage from "@images/octocorp_img.png";
+import projectThreeImage from "@images/project-three.jpg";
+import projectTwoImage from "@images/project-two.jpg";
 import projectEightImage from "@images/school-app.png";
+import projectFourImage from "@images/what-2-eat.png";
 import {
   BANDCAMPIFY,
   BANDCAMPIFY_CODE,
+  BUILDTREE,
   BURN_ART,
   LYRICS_AND_TABS,
   LYRICS_AND_TABS_CODE,
   NPM_PACKAGE,
   NPM_PACKAGE_CODE,
   OCTOCORP,
+  SCHOOL_APP,
+  SCHOOL_APP_CODE,
   WHALE,
   WHAT_TO_EAT,
   WHAT_TO_EAT_CODE,
-  SCHOOL_APP,
-  SCHOOL_APP_CODE,
 } from "./externalLinks";
 
 export const projectOne = {
@@ -91,13 +93,22 @@ export const projectEight = {
   code: SCHOOL_APP_CODE,
 };
 
+export const projectNine = {
+  name: "buildtree",
+  description: "ECOSYSTEM OF BLOCKCHAIN TOOLS",
+  image: projectNineImage.src,
+  link: BUILDTREE,
+  role: "Front End Dev. Web3.",
+};
+
 export const projectsSlides = [
-  { name: "octocorp", slide: 0 },
-  { name: "bandcampify", slide: 1 },
-  { name: "burn.art", slide: 2 },
-  { name: "whale", slide: 3 },
-  { name: "room-app", slide: 4 },
-  { name: "what-2-eat", slide: 5 },
-  { name: "ck-comp", slide: 6 },
-  { name: "lyrics&tabs", slide: 7 },
+  { name: "buildtree", slide: 0 },
+  { name: "octocorp", slide: 1 },
+  { name: "bandcampify", slide: 2 },
+  { name: "burn.art", slide: 3 },
+  { name: "whale", slide: 4 },
+  { name: "room-app", slide: 5 },
+  { name: "what-2-eat", slide: 6 },
+  { name: "ck-comp", slide: 7 },
+  { name: "lyrics&tabs", slide: 8 },
 ];

@@ -19,3 +19,4 @@ export const BANDCAMPIFY_CODE =
   "https://github.com/pablojacosta/bandcampify-app";
 export const SCHOOL_APP = "https://room-manager-school-app.netlify.app/";
 export const SCHOOL_APP_CODE = "https://github.com/pablojacosta/school-app";
+export const BUILDTREE = "https://buildtree.io/";
