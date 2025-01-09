@@ -1,41 +1,42 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import styles from "./ProjectsSlider.module.scss";
-import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
-import NextArrow from "./components/NextArrow/NextArrow";
-import PrevArrow from "./components/PrevArrow/PrevArrow";
-import Menu from "./components/Menu/Menu";
-import { useEffect, useState } from "react";
-import useMediaQuery from "hooks/useMediaQuery";
-import { findName, findSlide } from "utils/helpers/slider/slides";
+import IconCloudflare from "@components/elements/Icons/CloudflareIcon/CloudflareIcon";
+import IconDocker from "@components/elements/Icons/DockerIcon/DockerIcon";
+import IconFigma from "@components/elements/Icons/FigmaIcon/FigmIcon";
+import Icon488Git from "@components/elements/Icons/GitIcon/GitIcon";
+import IconJest from "@components/elements/Icons/JestIcon/Jest";
+import IconBxlMongodb from "@components/elements/Icons/MongoIcon/MongoIcon";
+import IconNetlify from "@components/elements/Icons/NetlifyIcon/NetlifyIcon";
+import IconNextjs from "@components/elements/Icons/NextIcon/NextIcon";
+import IconNodejs from "@components/elements/Icons/NodeIcon/NodeIcon";
+import IconNpm from "@components/elements/Icons/NpmIcon/NpmIcon";
+import IconReact from "@components/elements/Icons/ReactIcon/ReactIcon";
+import IconRender from "@components/elements/Icons/RenderIcon/RenderIcon";
+import IconSass from "@components/elements/Icons/SassIcon/SassIcon";
+import IconStorybook from "@components/elements/Icons/StorybookIcon/StorybookIcon";
+import IconTypescript from "@components/elements/Icons/TypescriptIcon/TypescriptIcon";
+import IconVite from "@components/elements/Icons/ViteIcon/ViteIcon";
+import IconWeb3dotjs from "@components/elements/Icons/Web3Icon/Web3Icon";
 import {
+  projectEight,
   projectFive,
   projectFour,
+  projectNine,
   projectOne,
   projectSeven,
   projectSix,
   projectThree,
   projectTwo,
-  projectEight,
 } from "constants/projects";
-import IconNextjs from "@components/elements/Icons/NextIcon/NextIcon";
-import IconReact from "@components/elements/Icons/ReactIcon/ReactIcon";
-import IconSass from "@components/elements/Icons/SassIcon/SassIcon";
-import IconCloudflare from "@components/elements/Icons/CloudflareIcon/CloudflareIcon";
-import IconFigma from "@components/elements/Icons/FigmaIcon/FigmIcon";
-import IconNodejs from "@components/elements/Icons/NodeIcon/NodeIcon";
-import IconTypescript from "@components/elements/Icons/TypescriptIcon/TypescriptIcon";
-import IconWeb3dotjs from "@components/elements/Icons/Web3Icon/Web3Icon";
-import IconJest from "@components/elements/Icons/JestIcon/Jest";
-import IconVite from "@components/elements/Icons/ViteIcon/ViteIcon";
-import Icon488Git from "@components/elements/Icons/GitIcon/GitIcon";
-import IconBxlMongodb from "@components/elements/Icons/MongoIcon/MongoIcon";
-import IconDocker from "@components/elements/Icons/DockerIcon/DockerIcon";
-import IconStorybook from "@components/elements/Icons/StorybookIcon/StorybookIcon";
-import IconNetlify from "@components/elements/Icons/NetlifyIcon/NetlifyIcon";
-import IconNpm from "@components/elements/Icons/NpmIcon/NpmIcon";
-import IconRender from "@components/elements/Icons/RenderIcon/RenderIcon";
+import useMediaQuery from "hooks/useMediaQuery";
+import { useEffect, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import { findName, findSlide } from "utils/helpers/slider/slides";
+import styles from "./ProjectsSlider.module.scss";
+import Menu from "./components/Menu/Menu";
+import NextArrow from "./components/NextArrow/NextArrow";
+import PrevArrow from "./components/PrevArrow/PrevArrow";
+import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
 
 const ProjectsSlider = () => {
   const [selected, setSelected] = useState("octocorp");
@@ -91,6 +92,25 @@ const ProjectsSlider = () => {
           }
           asNavFor={nav1}
         >
+          <ProjectDetails
+            image={projectNine.image}
+            name={projectNine.name}
+            description={projectNine.description}
+            link={projectNine.link}
+            role={projectNine.role}
+            tech={[
+              IconNextjs,
+              IconReact,
+              IconTypescript,
+              IconSass,
+              IconNodejs,
+              IconWeb3dotjs,
+              IconJest,
+              Icon488Git,
+              IconCloudflare,
+              IconFigma,
+            ]}
+          />
           <ProjectDetails
             image={projectOne.image}
             name={projectOne.name}
