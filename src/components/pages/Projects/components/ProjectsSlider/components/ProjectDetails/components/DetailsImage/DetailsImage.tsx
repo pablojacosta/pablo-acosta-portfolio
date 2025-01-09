@@ -1,5 +1,6 @@
 import {
   BANDCAMPIFY,
+  BUILDTREE,
   LYRICS_AND_TABS,
   OCTOCORP,
   WHAT_TO_EAT,
@@ -14,7 +15,9 @@ interface IDetailsImage {
 
 const DetailsImage = ({ link, image }: IDetailsImage) => {
   const secondClass =
-    link !== OCTOCORP && link !== WHAT_TO_EAT ? styles.secondClass : "";
+    link !== OCTOCORP && link !== WHAT_TO_EAT && link !== BUILDTREE
+      ? styles.secondClass
+      : "";
   const coverImageClass =
     link === LYRICS_AND_TABS || link === BANDCAMPIFY ? styles.coverImage : "";
 
