@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { GITHUB_URL, LINKEDIN_URL } from '../constants/social';
 
 export const Footer = () => {
   return (
@@ -50,7 +51,7 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Get in touch</h3>
             <div className="flex gap-4">
               <Link
-                href="https://github.com"
+                href={GITHUB_URL}
                 className="text-gray-400 hover:text-white"
               >
                 <span className="sr-only">GitHub</span>
@@ -63,7 +64,7 @@ export const Footer = () => {
                 </svg>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href={LINKEDIN_URL}
                 className="text-gray-400 hover:text-white"
               >
                 <span className="sr-only">LinkedIn</span>
