@@ -1,24 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
+
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS.
+
+## Features
+
+- Modern, responsive design
+- Server-side rendering with Next.js 14
+- Type-safe development with TypeScript
+- Styling with Tailwind CSS
+- Optimized images with Next.js Image component
+- SEO optimized with Next.js metadata
+- Accessible design with proper ARIA attributes
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` - Next.js 14 app directory containing all pages and components
+- `app/components/` - Reusable React components
+- `public/` - Static assets like images
+- `app/globals.css` - Global styles and Tailwind CSS configuration
+
+## Technologies Used
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- React
+- ESLint
+- Prettier
 
 ## Learn More
 
