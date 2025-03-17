@@ -70,25 +70,25 @@ export const Navigation = () => {
           <a
             href="/pablo-jesus-acosta-resume.pdf"
             download
-            className="text-gray-400 hover:text-orange-500 transition-colors"
+            className="text-gray-400 hover:text-primary transition-colors"
           >
             Resume
           </a>
           <Link
             href="/projects"
-            className="text-gray-400 hover:text-orange-500 transition-colors"
+            className="text-gray-400 hover:text-primary transition-colors"
           >
             Projects
           </Link>
           <Link
             href="/about"
-            className="text-gray-400 hover:text-orange-500 transition-colors"
+            className="text-gray-400 hover:text-primary transition-colors"
           >
             About
           </Link>
           <Link
             href="/contact"
-            className="text-gray-400 hover:text-orange-500 transition-colors"
+            className="text-gray-400 hover:text-primary transition-colors"
           >
             Contact
           </Link>
@@ -97,7 +97,7 @@ export const Navigation = () => {
         {/* Hamburger Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden p-2 text-gray-400 hover:text-orange-500 transition-colors"
+          className="lg:hidden p-2 text-gray-400 hover:text-primary transition-colors"
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         >
           <svg
@@ -138,28 +138,28 @@ export const Navigation = () => {
             <a
               href="/pablo-jesus-acosta-resume.pdf"
               download
-              className="text-white hover:text-orange-500 transition-colors"
+              className="text-white hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Resume
             </a>
             <Link
               href="/projects"
-              className="text-white hover:text-orange-500 transition-colors"
+              className="text-white hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
             </Link>
             <Link
               href="/about"
-              className="text-white hover:text-orange-500 transition-colors"
+              className="text-white hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-white hover:text-orange-500 transition-colors"
+              className="text-white hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact

@@ -79,7 +79,7 @@ export function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+                className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                 placeholder="Your name"
               />
             </div>
@@ -98,7 +98,7 @@ export function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+                className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                 placeholder="your@email.com"
               />
             </div>
@@ -117,7 +117,7 @@ export function Contact() {
                 onChange={handleChange}
                 required
                 rows={6}
-                className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors resize-none"
+                className="w-full px-4 py-3 bg-zinc-900 border border-white/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
                 placeholder="Your message..."
               />
             </div>
@@ -125,13 +125,13 @@ export function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full md:w-auto px-8 py-3 bg-orange-500 text-black font-medium rounded-lg hover:bg-orange-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full md:w-auto px-8 py-3 bg-primary text-black font-medium rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
 
             {submitStatus === 'success' && (
-              <p className="text-orange-500">
+              <p className="text-primary">
                 Thank you! Your message has been sent successfully.
               </p>
             )}
@@ -150,7 +150,7 @@ export function Contact() {
                 href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-zinc-900 border border-white/10 rounded-lg hover:border-orange-500/20 hover:bg-orange-500/5 transition-colors"
+                className="px-6 py-3 bg-zinc-900 border border-white/10 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors"
               >
                 GitHub
               </Link>
@@ -158,7 +158,7 @@ export function Contact() {
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-zinc-900 border border-white/10 rounded-lg hover:border-orange-500/20 hover:bg-orange-500/5 transition-colors"
+                className="px-6 py-3 bg-zinc-900 border border-white/10 rounded-lg hover:border-primary/20 hover:bg-primary/5 transition-colors"
               >
                 LinkedIn
               </Link>

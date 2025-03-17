@@ -14,7 +14,7 @@ export const FeaturedProjects = () => {
               <Link
                 key={project.title}
                 href={project.projectUrl}
-                className="group block bg-zinc-900 rounded-lg overflow-hidden border border-white/5 hover:border-orange-500/20 transition-colors"
+                className="group block bg-zinc-900 rounded-lg overflow-hidden border border-white/5 hover:border-primary/20 transition-colors"
               >
                 <div className="relative w-full aspect-[16/9]">
                   <Image
@@ -33,7 +33,7 @@ export const FeaturedProjects = () => {
                         className={`flex items-center gap-1.5 px-2 py-1 text-xs rounded-full ${
                           project.type === 'professional'
                             ? 'bg-blue-500/10 text-blue-400'
-                            : 'bg-orange-500/10 text-orange-400'
+                            : 'bg-primary/10 text-primary'
                         }`}
                       >
                         {project.type === 'professional' ? (
@@ -76,7 +76,7 @@ export const FeaturedProjects = () => {
                     {project.tags.map(tag => (
                       <span
                         key={tag}
-                        className="px-2 py-1 text-xs bg-orange-500/10 text-orange-500 rounded"
+                        className="px-2 py-1 text-xs bg-primary/10 text-primary rounded"
                       >
                         {tag}
                       </span>

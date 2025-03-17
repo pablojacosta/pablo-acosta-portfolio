@@ -26,6 +26,7 @@ module.exports = {
           400: '#9ca3af',
         },
         background: '#0a0a0a',
+        primary: '#8ECAE6',
       },
     },
   },
