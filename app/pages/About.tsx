@@ -18,11 +18,12 @@ export const About = () => {
           <div className="space-y-6">
             <h1 className="text-4xl font-bold">About Me</h1>
             <p className="text-xl text-gray-300">
-              As a passionate and dynamic Front-End Developer, I specialize in
-              building user-centric web applications with modern technologies
-              like React, Next.js, and TypeScript. With a strong foundation in
-              HTML, CSS, and JavaScript, I focus on creating seamless and
-              intuitive user experiences that engage and empower users.
+              As a passionate and versatile Full Stack Developer, I specialize
+              in building comprehensive web applications with modern
+              technologies like React, Next.js, Node.js, and TypeScript. With a
+              strong foundation in both front-end and back-end development, I
+              focus on creating seamless, scalable, and performant solutions
+              that deliver exceptional user experiences.
             </p>
           </div>
         </div>
@@ -36,8 +37,8 @@ export const About = () => {
             applications, working closely with cross-functional teams to deliver
             high-quality, scalable solutions. My experience spans across various
             industries, including blockchain, where I've integrated Web3
-            technologies and smart contracts into dApps, but my primary focus
-            now is on delivering exceptional front-end solutions.
+            technologies and smart contracts into dApps, showcasing my ability
+            to work with both client-side and server-side technologies.
           </p>
         </div>
 
@@ -46,10 +47,10 @@ export const About = () => {
           <h2 className="text-2xl font-semibold text-primary">Philosophy</h2>
           <p className="text-lg text-gray-300">
             I'm always looking to push the boundaries of what's possible with
-            front-end development and to stay ahead of trends in the industry.
-            Whether it's crafting pixel-perfect UIs, optimizing performance, or
-            ensuring the highest standards of accessibility, I strive to create
-            web applications that are both beautiful and functional.
+            full-stack development and to stay ahead of trends in the industry.
+            Whether it's crafting pixel-perfect UIs, or optimizing API
+            performance, I strive to create web applications that are both
+            powerful and user-friendly.
           </p>
         </div>
 
@@ -62,31 +63,30 @@ export const About = () => {
             <li className="flex items-start gap-3 p-4 rounded-lg bg-primary/10 ring-1 ring-primary/10">
               <span className="h-1.5 w-2 rounded-full bg-primary mt-2" />
               <span className="text-gray-300">
-                Expertise in modern JavaScript frameworks, particularly React
-                and Next.js
+                Full-stack expertise with modern technologies including React,
+                Next.js, Node.js, and TypeScript
               </span>
             </li>
             <li className="flex items-start gap-3 p-4 rounded-lg bg-primary/10 ring-1 ring-primary/10">
               <span className="h-1.5 w-4 rounded-full bg-primary mt-2" />
               <span className="text-gray-300">
-                Strong understanding of front-end principles, including
-                responsive design, performance optimization, and cross-browser
-                compatibility
+                Strong understanding of system architecture, including API
+                design, and scalable infrastructure
               </span>
             </li>
             <li className="flex items-start gap-3 p-4 rounded-lg bg-primary/10 ring-1 ring-primary/10">
               <span className="h-1.5 w-4 rounded-full bg-primary mt-2" />
               <span className="text-gray-300">
-                A collaborative mindset, having worked in agile teams with
-                designers, back-end developers, and product owners to bring
-                complex projects to life
+                A collaborative mindset, having worked in agile teams to deliver
+                end-to-end solutions that meet business and technical
+                requirements
               </span>
             </li>
             <li className="flex items-start gap-3 p-4 rounded-lg bg-primary/10 ring-1 ring-primary/10">
               <span className="h-1.5 w-3 rounded-full bg-primary mt-2" />
               <span className="text-gray-300">
-                A commitment to writing clean, maintainable code and ensuring a
-                positive user experience in every project
+                A commitment to writing clean, maintainable code and building
+                robust, scalable applications from front to back
               </span>
             </li>
           </ul>
@@ -96,9 +96,9 @@ export const About = () => {
         <div className="space-y-6">
           <h2 className="text-2xl font-semibold text-primary">Let's Connect</h2>
           <p className="text-lg text-gray-300">
-            I'm currently seeking opportunities to apply my front-end expertise
+            I'm currently seeking opportunities to apply my full-stack expertise
             in a challenging, growth-oriented role where I can continue to
-            refine my skills and contribute to building amazing web
+            refine my skills and contribute to building robust and scalable web
             applications. Let's connect and see how I can help bring your next
             web project to life!
           </p>

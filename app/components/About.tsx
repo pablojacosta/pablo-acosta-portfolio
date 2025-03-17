@@ -1,16 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {
-  className?: string;
-}
-
 export const About = () => {
   return (
     <section className="px-6 py-24 max-w-7xl mx-auto">
       <h2 className="text-4xl font-bold mb-16">Hi!</h2>
       <div className="grid md:grid-cols-[300px,1fr] gap-12">
-        <div className="relative w-full aspect-square md:aspect-auto md:h-[300px] rounded-2xl overflow-hidden bg-orange-800/20 ring-1 ring-orange-500/20">
+        <div className="relative w-full aspect-square md:aspect-auto md:h-[300px] rounded-2xl overflow-hidden bg-primary/20 ring-1 ring-primary/20">
           <Image
             src="/images/selfie.webp"
             alt="Profile photo"
@@ -21,22 +17,19 @@ export const About = () => {
         </div>
         <div className="space-y-8">
           <p className="text-xl text-gray-300">
-            I'm Pablo Acosta, a passionate Front-End Developer with a strong
-            Full-Stack foundation. I specialize in building dynamic, responsive,
-            and high-performance web applications that prioritize user
-            experience (UX) and functional design. My goal is to craft
-            intuitive, engaging front-end experiences while ensuring that all
-            aspects of the application —from layout to performance— work
-            harmoniously.
+            I'm Pablo Acosta, a passionate Full Stack Developer specializing in
+            building dynamic, responsive, and high-performance web applications
+            that prioritize both user experience and system architecture. My
+            goal is to create robust solutions that excel in every aspect - from
+            intuitive front-end interfaces to efficient back-end systems.
           </p>
           <p className="text-xl text-gray-300">
-            I have hands-on experience with cutting-edge front-end technologies
-            like React, Next.js, TypeScript, SASS, and Tailwind CSS, creating
-            pixel-perfect, responsive, and scalable interfaces. Although my
-            primary focus is front-end development, I also bring valuable
-            Full-Stack expertise to the table, allowing me to build seamless
-            connections between the front-end and back-end for more integrated
-            and robust applications.
+            I have extensive experience with modern web technologies including
+            React, Next.js, Node.js, and TypeScript, allowing me to build
+            complete, scalable applications. My comprehensive full-stack
+            expertise enables me to architect and implement solutions that are
+            both powerful and maintainable, ensuring seamless integration
+            between all system components.
           </p>
           <p className="text-xl text-gray-300">
             I take pride in writing clean, maintainable code and am constantly
@@ -45,109 +38,109 @@ export const About = () => {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <div>
-              <h3 className="text-sm font-semibold text-orange-500 mb-1">
+              <h3 className="text-sm font-semibold text-primary mb-1">
                 Front-End
               </h3>
               <ul className="space-y-0.5 text-sm text-gray-300">
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   React & Next.js
                 </li>
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   TypeScript
                 </li>
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   SASS & Tailwind
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-orange-500 mb-1">
+              <h3 className="text-sm font-semibold text-primary mb-1">
                 State Management
               </h3>
               <ul className="space-y-0.5 text-sm text-gray-300">
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   Zustand
                 </li>
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   React Context
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-orange-500 mb-1">
+              <h3 className="text-sm font-semibold text-primary mb-1">
                 Version Control
               </h3>
               <ul className="space-y-0.5 text-sm text-gray-300">
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   Git
                 </li>
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   Github
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-orange-500 mb-1">
+              <h3 className="text-sm font-semibold text-primary mb-1">
                 Back-End
               </h3>
               <ul className="space-y-0.5 text-sm text-gray-300">
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   Node.js
                 </li>
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
-                  MongoDB
+                  <span className="h-1 w-1 rounded-full bg-primary" />
+                  Express.js
                 </li>
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
-                  Docker
+                  <span className="h-1 w-1 rounded-full bg-primary" />
+                  MongoDB
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-sm font-semibold text-orange-500 mb-1">
+              <h3 className="text-sm font-semibold text-primary mb-1">
                 Testing
               </h3>
               <ul className="space-y-0.5 text-sm text-gray-300">
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   Jest
                 </li>
                 <li className="flex items-center gap-1.5">
-                  <span className="h-1 w-1 rounded-full bg-orange-500" />
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   React Testing Library
                 </li>
               </ul>
             </div>
           </div>
           <p className="text-sm text-gray-400 italic">
-            Always focused on front-end for building optimal user interfaces and
-            smooth user experiences.
+            Committed to delivering high-quality, end-to-end solutions that
+            combine excellent user experience with robust system architecture.
           </p>
           <div className="space-y-6">
             <a
               href="/pablo-jesus-acosta-resume.pdf"
               download
-              className="inline-flex items-center text-orange-500 hover:text-orange-400 transition-colors text-lg"
+              className="inline-flex items-center text-primary hover:text-primary/80 transition-colors text-lg"
             >
               Download my resume →
             </a>
             <div className="flex gap-6">
               <Link
                 href="https://github.com/pablojacosta"
-                className="text-gray-400 hover:text-orange-500 transition-colors"
+                className="text-gray-400 hover:text-primary transition-colors"
               >
                 <span className="sr-only">GitHub</span>
                 <svg
@@ -160,7 +153,7 @@ export const About = () => {
               </Link>
               <Link
                 href="https://www.linkedin.com/in/pablo-j-acosta"
-                className="text-gray-400 hover:text-orange-500 transition-colors"
+                className="text-gray-400 hover:text-primary transition-colors"
               >
                 <span className="sr-only">LinkedIn</span>
                 <svg

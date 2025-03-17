@@ -13,10 +13,10 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: {
     template: '%s | Pablo Jesus Acosta',
-    default: 'Pablo Jesus Acosta | Frontend Web Developer',
+    default: 'Pablo Jesus Acosta | Full Stack Developer',
   },
   description:
-    'Frontend Web Developer specializing in React, Next.js, and modern web technologies.',
+    'Full Stack Developer specializing in modern web technologies, with expertise in both front-end and back-end development.',
   icons: {
     icon: [
       {
