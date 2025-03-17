@@ -1,16 +1,13 @@
 [build]
-  command = "npm run build --verbose"
-  publish = "out"
+  command = "npm run build"
+  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
 [build.environment]
-  NEXT_USE_NETLIFY_EDGE = "true"
   NODE_VERSION = "18"
   NPM_VERSION = "9"
-  NEXT_TELEMETRY_DISABLED = "1"
-  DEBUG = "*"
 
 [functions]
   node_bundler = "esbuild"
