@@ -70,11 +70,11 @@ export function Projects() {
                 />
               </div>
               <div className="p-6">
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-2">
                   <h2 className="text-2xl font-bold">{project.title}</h2>
                   <div className="flex items-center gap-2">
                     <span
-                      className={`flex items-center gap-1.5 px-2 py-1 text-xs rounded-full ${
+                      className={`flex items-center gap-1.5 px-2 py-1 text-xs rounded-full whitespace-nowrap ${
                         project.type === 'professional'
                           ? 'bg-blue-500/10 text-blue-400'
                           : 'bg-primary/10 text-primary'
