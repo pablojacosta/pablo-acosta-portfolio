@@ -1,6 +1,8 @@
-import { ImageResponse } from '@vercel/og';
+import { ImageResponse } from 'next/og';
 
-export const runtime = 'edge';
+export const runtime = 'nodejs';
+export const revalidate = 0;
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
