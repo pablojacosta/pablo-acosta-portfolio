@@ -17,6 +17,31 @@ export const metadata: Metadata = {
   },
   description:
     'Full Stack Developer specializing in modern web technologies, with expertise in both front-end and back-end development.',
+  metadataBase: new URL('https://pablo-acosta-portfolio.netlify.app'),
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://pablo-acosta-portfolio.netlify.app',
+    siteName: 'Pablo Jesus Acosta',
+    title: 'Pablo Jesus Acosta | Full Stack Developer',
+    description:
+      'Full Stack Developer specializing in modern web technologies, with expertise in both front-end and back-end development.',
+    images: [
+      {
+        url: '/api/og',
+        width: 1200,
+        height: 630,
+        alt: 'Pablo Jesus Acosta - Full Stack Developer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pablo Jesus Acosta | Full Stack Developer',
+    description:
+      'Full Stack Developer specializing in modern web technologies, with expertise in both front-end and back-end development.',
+    images: ['/api/og'],
+  },
   icons: {
     icon: [
       {
