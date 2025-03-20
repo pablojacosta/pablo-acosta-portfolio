@@ -12,6 +12,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
+  distDir: '.next',
 };
 
 module.exports = nextConfig;
