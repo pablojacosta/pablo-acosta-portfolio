@@ -9,7 +9,9 @@ const nextConfig = {
         hostname: 'placehold.co',
       },
     ],
+    unoptimized: true,
   },
+  output: 'export',
 };
 
 module.exports = nextConfig;
