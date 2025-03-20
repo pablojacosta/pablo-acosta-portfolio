@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Full Stack Developer specializing in modern web technologies, with expertise in both front-end and back-end development.',
     images: [
       {
-        url: '/api/og',
+        url: '/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Pablo Jesus Acosta - Full Stack Developer',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: 'Pablo Jesus Acosta | Full Stack Developer',
     description:
       'Full Stack Developer specializing in modern web technologies, with expertise in both front-end and back-end development.',
-    images: ['/api/og'],
+    images: ['/images/og-image.png'],
   },
   icons: {
     icon: [
