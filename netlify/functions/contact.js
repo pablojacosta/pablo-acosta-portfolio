@@ -1,9 +1,15 @@
-import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
 
-export async function POST(req: Request) {
+exports.handler = async function (event) {
+  if (event.httpMethod !== 'POST') {
+    return {
+      statusCode: 405,
+      body: JSON.stringify({ error: 'Method not allowed' }),
+    };
+  }
+
   try {
-    const { name, email, message } = await req.json();
+    const { name, email, message } = JSON.parse(event.body);
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -32,15 +38,15 @@ Message: ${message}
 
     await transporter.sendMail(mailOptions);
 
-    return NextResponse.json(
-      { message: 'Email sent successfully!' },
-      { status: 200 }
-    );
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: 'Email sent successfully!' }),
+    };
   } catch (error) {
     console.error('Error sending email:', error);
-    return NextResponse.json(
-      { error: 'Failed to send email' },
-      { status: 500 }
-    );
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: 'Failed to send email' }),
+    };
   }
-}
+};
