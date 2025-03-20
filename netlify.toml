@@ -11,16 +11,4 @@
   package = "@netlify/plugin-nextjs"
 
 [functions]
-  node_bundler = "esbuild"
-
-# Add build settings for Next.js
-[build.processing]
-  skip_processing = false
-
-[build.processing.css]
-  bundle = true
-  minify = true
-
-[build.processing.js]
-  bundle = true
-  minify = true 
+  node_bundler = "esbuild" 
