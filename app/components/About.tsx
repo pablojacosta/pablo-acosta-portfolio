@@ -120,11 +120,52 @@ export const About = () => {
                 </li>
                 <li className="flex items-center gap-1.5">
                   <span className="h-1 w-1 rounded-full bg-primary" />
+                  Vitest
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <span className="h-1 w-1 rounded-full bg-primary" />
                   React Testing Library
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <span className="h-1 w-1 rounded-full bg-primary" />
+                  Cypress
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold text-primary mb-1">CI</h3>
+              <ul className="space-y-0.5 text-sm text-gray-300">
+                <li className="flex items-center gap-1.5">
+                  <span className="h-1 w-1 rounded-full bg-primary" />
+                  Github Actions
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-semibold text-primary mb-1">Web3</h3>
+              <ul className="space-y-0.5 text-sm text-gray-300">
+                <li className="flex items-center gap-1.5">
+                  <span className="h-1 w-1 rounded-full bg-primary" />
+                  Wagmi
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <span className="h-1 w-1 rounded-full bg-primary" />
+                  Viem
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <span className="h-1 w-1 rounded-full bg-primary" />
+                  Web3.js
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <span className="h-1 w-1 rounded-full bg-primary" />
+                  Ethers.js
                 </li>
               </ul>
             </div>
           </div>
+
           <p className="text-sm text-gray-400 italic">
             Committed to delivering high-quality, end-to-end solutions that
             combine excellent user experience with robust system architecture.
