@@ -127,6 +127,8 @@ export function Projects() {
                 <div className="mt-auto flex flex-wrap gap-3">
                   <Link
                     href={project.projectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-4 py-2 bg-primary text-black font-medium rounded hover:bg-primary/90 transition-colors"
                   >
                     View Project
@@ -134,6 +136,8 @@ export function Projects() {
                   {project.type === 'personal' && project.githubUrl && (
                     <Link
                       href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-4 py-2 bg-background border border-primary/20 text-primary font-medium rounded hover:bg-primary/10 transition-colors"
                     >
                       View Code
