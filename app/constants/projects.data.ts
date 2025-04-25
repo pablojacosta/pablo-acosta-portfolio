@@ -8,6 +8,7 @@ import school from '../../public/images/school-app.png';
 import tom from '../../public/images/tom-sachs.webp';
 import whale from '../../public/images/whale.jpg';
 import eat from '../../public/images/what-2-eat.png';
+import wallet from '../../public/images/wallet-dashboard.png';
 
 interface Project {
   title: string;
@@ -67,7 +68,7 @@ export const projects: Project[] = [
     ],
     projectUrl: 'https://octocorporation.com',
     longDescription:
-      'NFT landing and minting page. Built an UI for creating composable NFTs, allowing users to combine NFT parts to create new unique assets. Implemented the script used for creating NFTs with random characteristics. ',
+      'NFT landing and minting page. Built an UI for creating composable NFTs, allowing users to combine NFT parts to create new unique assets.',
     githubUrl: 'https://github.com',
     isFeatured: true,
     type: 'professional',
@@ -156,21 +157,48 @@ export const projects: Project[] = [
     type: 'professional',
   },
   {
+    title: 'Web3 Wallet Dashboard',
+    description: 'Web3 Wallet Dashboard.',
+    image: wallet.src,
+    link: '/projects',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Material-UI',
+      'Zustand',
+      'React Query',
+      'Wagmi',
+      'Viem',
+      'RainbowKit',
+      'Vitest',
+      'Cypress',
+      'Vercel',
+    ],
+    projectUrl: 'https://wallet-dashboard-seven-ashy.vercel.app/',
+    longDescription:
+      'A modern Web3 wallet dashboard featuring seamless blockchain integration, real-time transaction monitoring, and an intuitive Material-UI interface. The application enables users to securely manage their crypto assets across multiple networks while providing a responsive and user-friendly experience.',
+    githubUrl: 'https://github.com/pablojacosta/web3-wallet-dashboard',
+    isFeatured: false,
+    type: 'personal',
+  },
+  {
     title: 'Room App',
     description: 'Room management app.',
     image: school.src,
     link: '/projects',
     tags: [
-      'Next.js',
-      'TypeScript',
       'React',
+      'TypeScript',
       'Sass',
       'Node.js',
       'MongoDB',
       'Zustand',
+      'React Query',
     ],
     projectUrl: 'https://room-manager-school-app.netlify.app/',
-    longDescription: 'Room management app.',
+    longDescription:
+      'Classroom management tool focused on optimized data fetching.',
     githubUrl: 'https://github.com/pablojacosta/school-app',
     isFeatured: false,
     type: 'personal',

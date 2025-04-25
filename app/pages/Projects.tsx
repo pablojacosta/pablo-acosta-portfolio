@@ -58,7 +58,7 @@ export function Projects() {
           {filteredProjects.map(project => (
             <article
               key={project.title}
-              className="group bg-zinc-900 rounded-lg overflow-hidden border border-white/5 hover:border-primary/20 transition-colors"
+              className="group bg-zinc-900 rounded-lg overflow-hidden border border-white/5 hover:border-primary/20 transition-colors flex flex-col"
             >
               <div className="relative w-full aspect-[16/9]">
                 <Image
@@ -69,7 +69,7 @@ export function Projects() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-2">
                   <h2 className="text-2xl font-bold">{project.title}</h2>
                   <div className="flex items-center gap-2">
@@ -124,7 +124,7 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex flex-wrap gap-3">
+                <div className="mt-auto flex flex-wrap gap-3">
                   <Link
                     href={project.projectUrl}
                     className="px-4 py-2 bg-primary text-black font-medium rounded hover:bg-primary/90 transition-colors"
